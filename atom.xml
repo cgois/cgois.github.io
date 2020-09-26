@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">cgois</title>
     <subtitle type="html"></subtitle>
-    <updated>2020-09-26T14:48:38-03:00</updated>
+    <updated>2020-09-26T15:51:17-03:00</updated>
     <id>https://cgois.github.io/</id>
     <link rel="alternate" type="text/html" href="https://cgois.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://cgois.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">Parallelizing simple loops in Python</title>
             <link rel="alternate" type="text/html" href="https://cgois.github.io/posts/tutorial_processpool/" />
             <id>https://cgois.github.io/posts/tutorial_processpool/</id>
-            <updated>2020-09-26T14:48:26-03:00</updated>
+            <updated>2020-09-26T15:51:12-03:00</updated>
             <published>2020-09-26T13:54:40-03:00</published>
             <author>
                     <name>Carlos de Gois</name>
@@ -91,7 +91,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;[The &lt;code&gt;list&lt;/code&gt; call around &lt;code&gt;executor.map&lt;/code&gt; is just to cast the result as a list. Otherwise, you&amp;rsquo;ll get a generator. You also do not strictly need the &lt;code&gt;with&lt;/code&gt; structure to instantiate an executor, but it&amp;rsquo;s cleaner and safer this way.]&lt;/p&gt;
-&lt;p&gt;Try it and see how faster it goes. On my computer, with four threads, it was around four times faster than serial execution. This is pretty much all you need to parallelize simple tasks. But for fun, you can plot the results to see it actually works:&lt;/p&gt;
+&lt;p&gt;Try it and see how faster it goes. On my computer, with four threads, it was around four times faster than serial execution. For fun, you can plot the results to see it actually works:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -106,7 +106,8 @@
 &lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;And for even more fun, you can use &lt;code&gt;tqdm&lt;/code&gt; to include a progress bar to your executor (you may need to &lt;code&gt;pip install tqdm&lt;/code&gt;):&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://cgois.github.io/tutorial_processpool_plot.png&#34; alt=&#34;result plot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is pretty much all you need to do when parallelizing simple tasks. But for even more fun, you can use &lt;code&gt;tqdm&lt;/code&gt; to include a progress bar to your executor (you may need to &lt;code&gt;pip install tqdm&lt;/code&gt;):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -121,10 +122,11 @@
   &lt;span class=&#34;n&#34;&gt;yvals&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tqdm&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;executor&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;map&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xvals&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;total&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xvals&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# Include the progress bar&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;This may actually be useful when you have a huge computation to run, but do not trust the its time estimation, as it&amp;rsquo;ll only be precise when the function applications take the same time for any parameter, which is not always the case. The &lt;code&gt;total&lt;/code&gt; parameter, telling &lt;code&gt;tqdm&lt;/code&gt; how many elements we&amp;rsquo;ll be mapping onto, is not mandatory, but without it you&amp;rsquo;ll only get an iteration count, without the pretty progress bar.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://cgois.github.io/tutorial_processpool_tqdm.png&#34; alt=&#34;tqdm progress bar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This may actually be useful when you have a huge computation to run, but do not trust the its time estimation, as it&amp;rsquo;ll only be precise when the function applications take the same time for any parameter, which is not always the case. The &lt;code&gt;total&lt;/code&gt; parameter, telling &lt;code&gt;tqdm&lt;/code&gt; how many elements we&amp;rsquo;ll be mapping onto, is not mandatory, but without it you&amp;rsquo;ll only get an iteration count, without the pretty progress bar.&lt;/p&gt;
 &lt;p&gt;All this was done to an artificially simple problem. For actual use cases, you&amp;rsquo;ll possibly have to adapt you existing code&amp;rsquo;s structure to be able to use this method of parallelization, but it shouldn&amp;rsquo;t be hard to do so.&lt;/p&gt;
-&lt;p&gt;There are also some more useful methods, such as using &lt;code&gt;functools.partial&lt;/code&gt; to partially apply arguments to a function before calling &lt;code&gt;executor.map&lt;/code&gt; on the sequence of parameters. This is very useful if your function takes more than one parameter and you want to set the others to some constant before mapping, as mapping only works for single argument functions.&lt;/p&gt;
-&lt;p&gt;For more usage examples and details on the features, check &lt;a href=&#34;https://docs.python.org/3.8/library/concurrent.futures.html#module-concurrent.futures&#34;&gt;the documentation on &lt;em&gt;concurrent.futures&lt;/em&gt;&lt;/a&gt;. And if ever &lt;em&gt;concurrent.futures&lt;/em&gt; is not enough and you need more control over your parallelization tasks, check &lt;a href=&#34;https://docs.python.org/3.8/library/concurrency.html&#34;&gt;the concurrent execution chapter of the documentation&lt;/a&gt;, which describes other useful modules. Keep in mind, though, that because of &lt;a href=&#34;https://realpython.com/python-gil/&#34;&gt;Python&amp;rsquo;s GIL&lt;/a&gt;, using thread-based parallelization is useless for heavy computational tasks. Always pick process-based paralelization if you&amp;rsquo;re doing heavy computations.&lt;/p&gt;
+&lt;p&gt;There are also other useful methods, such as using &lt;code&gt;functools.partial&lt;/code&gt; to partially apply arguments to a function before calling &lt;code&gt;executor.map&lt;/code&gt; on the sequence of parameters. This is very useful if your function takes more than one parameter and you want to set the others to some constant before mapping, as mapping only works for single argument functions.&lt;/p&gt;
+&lt;p&gt;For more usage examples and details on the features, check &lt;a href=&#34;https://docs.python.org/3.8/library/concurrent.futures.html#module-concurrent.futures&#34;&gt;the documentation on &lt;em&gt;concurrent.futures&lt;/em&gt;&lt;/a&gt;. And if ever &lt;em&gt;concurrent.futures&lt;/em&gt; is not enough and you need more control over your parallelization tasks, check &lt;a href=&#34;https://docs.python.org/3.8/library/concurrency.html&#34;&gt;the concurrent execution chapter of the documentation&lt;/a&gt;, which describes other useful modules. Keep in mind, though, that because of &lt;a href=&#34;https://realpython.com/python-gil/&#34;&gt;Python&amp;rsquo;s GIL&lt;/a&gt;, using thread-based parallelization is useless for computationally intensive tasks. Always pick process-based paralelization in these cases.&lt;/p&gt;
 </content>
             
             
