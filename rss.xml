@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>cgois</title>
+        <link>https://example.com/</link>
+        <description></description>
+        <generator>Hugo 0.74.3 https://gohugo.io/</generator>
+        
+            <language>en</language>
+        
+        
+            <managingEditor>carlosbgois@gmail.com (Carlos de Gois)</managingEditor>
+        
+        
+            <webMaster>carlosbgois@gmail.com (Carlos de Gois)</webMaster>
+        
+        
+            <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+        
+        <lastBuildDate>Sat, 26 Sep 2020 00:55:40 -0300</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://example.com/rss.xml" />
+        
+        
+    </channel>
+</rss>
