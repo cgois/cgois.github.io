@@ -4,13 +4,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">cgois</title>
     <subtitle type="html"></subtitle>
-    <updated>2020-09-26T00:55:40-03:00</updated>
-    <id>https://example.com/</id>
-    <link rel="alternate" type="text/html" href="https://example.com/" />
-    <link rel="self" type="application/atom&#43;xml" href="https://example.com/atom.xml" />
+    <updated>2020-09-26T01:02:01-03:00</updated>
+    <id>https://cgois.github.io/</id>
+    <link rel="alternate" type="text/html" href="https://cgois.github.io/" />
+    <link rel="self" type="application/atom&#43;xml" href="https://cgois.github.io/atom.xml" />
     <author>
             <name>Carlos de Gois</name>
-            <uri>https://example.com/</uri>
+            <uri>https://cgois.github.io/</uri>
             
                 <email>carlosbgois@gmail.com</email>
             </author>

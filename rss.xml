@@ -8,7 +8,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>cgois</title>
-        <link>https://example.com/</link>
+        <link>https://cgois.github.io/</link>
         <description></description>
         <generator>Hugo 0.74.3 https://gohugo.io/</generator>
         
@@ -23,9 +23,9 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sat, 26 Sep 2020 00:55:40 -0300</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2020 01:02:01 -0300</lastBuildDate>
         
-            <atom:link rel="self" type="application/rss&#43;xml" href="https://example.com/rss.xml" />
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://cgois.github.io/rss.xml" />
         
         
     </channel>
