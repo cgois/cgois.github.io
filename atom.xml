@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">cgois</title>
     <subtitle type="html"></subtitle>
-    <updated>2020-09-26T01:09:39-03:00</updated>
+    <updated>2020-09-26T01:12:24-03:00</updated>
     <id>https://cgois.github.io/</id>
     <link rel="alternate" type="text/html" href="https://cgois.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://cgois.github.io/atom.xml" />
@@ -16,4 +16,61 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.74.3">Hugo</generator>
+        <entry>
+            <title type="text">Hello World</title>
+            <link rel="alternate" type="text/html" href="https://cgois.github.io/posts/hello-world/" />
+            <id>https://cgois.github.io/posts/hello-world/</id>
+            <updated>2020-09-26T01:11:47-03:00</updated>
+            <published>2020-09-25T22:59:23-03:00</published>
+            <author>
+                    <name>Carlos de Gois</name>
+                    <uri>https://cgois.github.io/</uri>
+                    <email>carlosbgois@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html"></summary>
+            
+                <content type="html"></content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="https://cgois.github.io/posts/" term="posts" label="posts" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://cgois.github.io/tags/python/" term="python" label="python" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://cgois.github.io/tags/performance/" term="performance" label="performance" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://cgois.github.io/tags/parallelization/" term="parallelization" label="parallelization" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
 </feed>

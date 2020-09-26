@@ -23,10 +23,64 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sat, 26 Sep 2020 01:09:39 -0300</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2020 01:12:24 -0300</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://cgois.github.io/rss.xml" />
         
+        
+            <item>
+                <title>Hello World</title>
+                <link>https://cgois.github.io/posts/hello-world/</link>
+                <guid isPermaLink="true">https://cgois.github.io/posts/hello-world/</guid>
+                <pubDate>Fri, 25 Sep 2020 22:59:23 -0300</pubDate>
+                
+                    <author>carlosbgois@gmail.com (Carlos de Gois)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="https://cgois.github.io/posts/">posts</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://cgois.github.io/tags/python/">python</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://cgois.github.io/tags/performance/">performance</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://cgois.github.io/tags/parallelization/">parallelization</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
     </channel>
 </rss>
