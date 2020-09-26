@@ -54,13 +54,13 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2020-09-26T13:54:40-03:00",
-        "dateModified": "2020-09-26T14:08:39-03:00",
+        "dateModified": "2020-09-26T14:48:26-03:00",
         "url": "https://cgois.github.io/posts/tutorial_processpool/",
         "headline": "Parallelizing simple loops in Python",
         "description": "Parallelizing loops with no iteration interdependence using Pythons’ concurrent.futures module.",
         "inLanguage" : "en",
         "articleSection": "posts",
-        "wordCount":  1067 ,
+        "wordCount":  1086 ,
         "author": {
             "@type": "Person",
             "email": "carlosbgois@gmail.com",
@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="cgois" />
 <meta property="og:locale" content="en" /><meta property="og:type" content="article" />
     <meta property="article:published_time" content="2020-09-26T13:54:40-03:00" />
-    <meta property="article:modified_time" content="2020-09-26T14:08:39-03:00" />
+    <meta property="article:modified_time" content="2020-09-26T14:48:26-03:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -226,7 +226,7 @@
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1067</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1086</span>
     
     
         
@@ -239,7 +239,7 @@
             
 
             <nav class="contents"></nav><div class="post-body e-content">
-              <p style="text-indent:0"><span class="drop-cap">S</span>ome algorithms can be easily parallelized, while others cannot. Newton&rsquo;s method, for one, is an inherently serial method in which every interation relies on the result of the last one. Monte Carlo methods, on the other hand, can be largely parallelized, as they rely on computations on several independent inputs. We call algorithms that can easily be separated into parallel parts <em>embarrasingly parallel</em>, and this usually occur with tasks that do not depend on communication between its parts.</p>
+              <p style="text-indent:0"><span class="drop-cap">A</span>lgorithms vary drastically on how easily parallelizable they are. Newton&rsquo;s method, for one, is an inherently serial method in which every interation relies on the result of the last one, while Monte Carlo methods can be largely parallelized, as they rely on identical computations over several independent inputs. We call algorithms that can easily be separated into parallel parts <em>embarrasingly parallel</em>, and with tasks that do not depend on state change (like updating a variable for some next iteration to use), this is usually the case.</p>
 <p>In science, lengthy computations can sometimes be hugely optimized through parallelization. In particular, <em>parameters space study</em> is a very common task that can easily be parallelized. This type of task can be seen as a black-box algorithm applied to several different inputs, whose outputs will then be collected and analyzed. Let $f$ be our black-box and $x$ its input. Then, $(x, f(x)), \forall x \in \mathcal{X}$, for a discrete but possibly huge set $\mathcal{X}$ of input parameters, is an embarrassingly parallel task, as we can easily distribute the computation of $f(\mathcal{X})$ to $W$ workers that will each compute a given $x$ independently of the others. Given adequate computational resources, doing so obviously leads to a huge speedup in your parameter space study (though not exactly a $W$-fold speedup, as there may be overheads in parallelization), luckily with very little modification to existing code.</p>
 <p>Python&rsquo;s standard library includes several packages to streamline parallel execution of code, such as <em>threading</em>, <em>multiprocessing</em> and <em>concurrent</em>. The <em>concurrent.futures</em> package provides a very simple, high-level interface to distribute computations to a set number of workers. It doesn&rsquo;t provide as much control over the processes as, say, <em>multiprocessing</em>, but it&rsquo;s much simpler and should be our pick as long as it&rsquo;s sufficient for the task at hand. Speaking of which, let&rsquo;s take evaluating the extremely hard to compute $f(x)=x^2$ function as our soon to be parallelized task. First, import the modules we&rsquo;ll need and define the function</p>
 <div class="highlight"><div class="chroma">
@@ -273,7 +273,8 @@
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="n">x2pairs</span> <span class="o">=</span> <span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)]</span>
 </code></pre></td></tr></table></div>
 </div>
-</div><p>This will, of course, take around forty seconds, as each query to $f$ takes two seconds (you may even <a href="https://docs.python.org/3.8/library/timeit.html" target="_blank" rel="noopener">timeit</a> if you&rsquo;d like). But we can clearly see this loop has no iteration interdependence at all, as it has no state changes. This means it&rsquo;ll be extremely simple to parallelize it. Sometimes things are not so simple, though. It&rsquo;s common for us to find poorly written loops that <em>do</em> have state changes in between iterations, but that <em>needn&rsquo;t</em> have (which also means it <em>shouldn&rsquo;t</em> be updating variables all over the place). In those cases, some sections of your code may need to be rewritten, and you&rsquo;ll see why in a bit.</p>
+</div><p>This will, of course, take around forty seconds, as each query to $f$ takes two seconds (you may even <a href="https://docs.python.org/3.8/library/timeit.html" target="_blank" rel="noopener">timeit</a> if you&rsquo;d like). But we can clearly see this loop has no iteration interdependence at all, as it has no state changes. This means it&rsquo;ll be extremely simple to parallelize it.</p>
+<p>[Sometimes things are not so simple, though. It&rsquo;s common for us to find poorly written loops that <em>do</em> have state changes in between iterations, but that <em>needn&rsquo;t</em> have (which probably also means it <em>shouldn&rsquo;t</em> be updating variables all over the place). In those cases, some sections of your code may need to be rewritten to be amenable to mapping. You&rsquo;ll see why in a bit.]</p>
 <p>Python supports some functional programming tools, and the easiest way to spawn parallel processes with <em>concurrent.futures</em> is to use a <em>ProcessPoolExecutor</em> and its <em>map</em> method. Mapping refers to applying a transformation to a list of objects. The following line will apply $f$ to each element in the sequence given as the second argument to <em>map</em>.</p>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -299,8 +300,8 @@
   <span class="n">yvals</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">executor</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">xvals</span><span class="p">))</span> <span class="c1"># Do the job and put it in a list</span>
 </code></pre></td></tr></table></div>
 </div>
-</div><p>[The <code>list</code> call around <code>executor.map</code> is just to cast the result as a list. Otherwise, you&rsquo;ll get a generator. You also do not strictly need te <code>with</code> structure to instantiate an executor, but it&rsquo;s cleaner and safer this way.]</p>
-<p>Try it and see how faster it goes. On my computer, with four threads, it was around four times faster than serial execution. This is pretty much it. But for fun, you can plot the results to see it actually works:</p>
+</div><p>[The <code>list</code> call around <code>executor.map</code> is just to cast the result as a list. Otherwise, you&rsquo;ll get a generator. You also do not strictly need the <code>with</code> structure to instantiate an executor, but it&rsquo;s cleaner and safer this way.]</p>
+<p>Try it and see how faster it goes. On my computer, with four threads, it was around four times faster than serial execution. This is pretty much all you need to parallelize simple tasks. But for fun, you can plot the results to see it actually works:</p>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -362,7 +363,7 @@
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2020-09-26 14:08:39 -03" style="cursor:help">
+        <span title="Updated @ 2020-09-26 14:48:26 -03" style="cursor:help">
 
 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-09-26</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-09-26</text></g></svg>
         </span></div>
