@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sat, 26 Sep 2020 15:51:17 -0300</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2020 15:54:16 -0300</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://cgois.github.io/rss.xml" />
         
@@ -132,7 +132,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://cgois.github.io/tutorial_processpool_tqdm.png&#34; alt=&#34;tqdm progress bar&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This may actually be useful when you have a huge computation to run, but do not trust the its time estimation, as it&amp;rsquo;ll only be precise when the function applications take the same time for any parameter, which is not always the case. The &lt;code&gt;total&lt;/code&gt; parameter, telling &lt;code&gt;tqdm&lt;/code&gt; how many elements we&amp;rsquo;ll be mapping onto, is not mandatory, but without it you&amp;rsquo;ll only get an iteration count, without the pretty progress bar.&lt;/p&gt;
+&lt;p&gt;This may actually be useful when you have a huge computation to run, but do not trust its time estimation, as it&amp;rsquo;ll only be precise when the function applications take the same time for any parameter, which is not always the case. The &lt;code&gt;total&lt;/code&gt; parameter, telling &lt;code&gt;tqdm&lt;/code&gt; how many elements we&amp;rsquo;ll be mapping onto, is not mandatory, but without it you&amp;rsquo;ll only get an iteration count, without the pretty progress bar.&lt;/p&gt;
 &lt;p&gt;All this was done to an artificially simple problem. For actual use cases, you&amp;rsquo;ll possibly have to adapt you existing code&amp;rsquo;s structure to be able to use this method of parallelization, but it shouldn&amp;rsquo;t be hard to do so.&lt;/p&gt;
 &lt;p&gt;There are also other useful methods, such as using &lt;code&gt;functools.partial&lt;/code&gt; to partially apply arguments to a function before calling &lt;code&gt;executor.map&lt;/code&gt; on the sequence of parameters. This is very useful if your function takes more than one parameter and you want to set the others to some constant before mapping, as mapping only works for single argument functions.&lt;/p&gt;
 &lt;p&gt;For more usage examples and details on the features, check &lt;a href=&#34;https://docs.python.org/3.8/library/concurrent.futures.html#module-concurrent.futures&#34;&gt;the documentation on &lt;em&gt;concurrent.futures&lt;/em&gt;&lt;/a&gt;. And if ever &lt;em&gt;concurrent.futures&lt;/em&gt; is not enough and you need more control over your parallelization tasks, check &lt;a href=&#34;https://docs.python.org/3.8/library/concurrency.html&#34;&gt;the concurrent execution chapter of the documentation&lt;/a&gt;, which describes other useful modules. Keep in mind, though, that because of &lt;a href=&#34;https://realpython.com/python-gil/&#34;&gt;Python&amp;rsquo;s GIL&lt;/a&gt;, using thread-based parallelization is useless for computationally intensive tasks. Always pick process-based paralelization in these cases.&lt;/p&gt;

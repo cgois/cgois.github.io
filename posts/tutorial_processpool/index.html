@@ -18,7 +18,7 @@
 
     
     
-        <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js" defer></script><script src="/js/meme.min.184027b38b3353eb43afbc50b89ac7710a6b9663f00fe005e3b5b591b40379d9.js" integrity="sha256-GEAns4szU&#43;tDr7xQuJrHcQprlmPwD&#43;AF47W1kbQDedk="></script>
+        <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js" defer></script><script src="/js/meme.min.1ea93792232a4e03fd482a1d0b829b6916a529ecc56362e4ae0c578bda5f27ab.js" integrity="sha256-Hqk3kiMqTgP9SCodC4KbaRalKezFY2LkrgxXi9pfJ6s="></script>
 
     
 
@@ -54,13 +54,13 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2020-09-26T13:54:40-03:00",
-        "dateModified": "2020-09-26T15:51:12-03:00",
+        "dateModified": "2020-09-26T15:53:56-03:00",
         "url": "https://cgois.github.io/posts/tutorial_processpool/",
         "headline": "Parallelizing simple loops in Python",
         "description": "Parallelizing loops with no iteration interdependence using Pythons’ concurrent.futures module.",
         "inLanguage" : "en",
         "articleSection": "posts",
-        "wordCount":  1084 ,
+        "wordCount":  1083 ,
         "image": ["https://cgois.github.io/tutorial_processpool_plot.png","https://cgois.github.io/tutorial_processpool_tqdm.png"],
         "author": {
             "@type": "Person",
@@ -98,7 +98,7 @@
 <meta property="og:locale" content="en" /><meta property="og:image" content="https://cgois.github.io/tutorial_processpool_plot.png" />
 <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2020-09-26T13:54:40-03:00" />
-    <meta property="article:modified_time" content="2020-09-26T15:51:12-03:00" />
+    <meta property="article:modified_time" content="2020-09-26T15:53:56-03:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -229,7 +229,7 @@
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1084</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1083</span>
     
     
         
@@ -336,7 +336,7 @@
 </code></pre></td></tr></table></div>
 </div>
 </div><p><img src="/tutorial_processpool_tqdm.png" alt="tqdm progress bar"></p>
-<p>This may actually be useful when you have a huge computation to run, but do not trust the its time estimation, as it&rsquo;ll only be precise when the function applications take the same time for any parameter, which is not always the case. The <code>total</code> parameter, telling <code>tqdm</code> how many elements we&rsquo;ll be mapping onto, is not mandatory, but without it you&rsquo;ll only get an iteration count, without the pretty progress bar.</p>
+<p>This may actually be useful when you have a huge computation to run, but do not trust its time estimation, as it&rsquo;ll only be precise when the function applications take the same time for any parameter, which is not always the case. The <code>total</code> parameter, telling <code>tqdm</code> how many elements we&rsquo;ll be mapping onto, is not mandatory, but without it you&rsquo;ll only get an iteration count, without the pretty progress bar.</p>
 <p>All this was done to an artificially simple problem. For actual use cases, you&rsquo;ll possibly have to adapt you existing code&rsquo;s structure to be able to use this method of parallelization, but it shouldn&rsquo;t be hard to do so.</p>
 <p>There are also other useful methods, such as using <code>functools.partial</code> to partially apply arguments to a function before calling <code>executor.map</code> on the sequence of parameters. This is very useful if your function takes more than one parameter and you want to set the others to some constant before mapping, as mapping only works for single argument functions.</p>
 <p>For more usage examples and details on the features, check <a href="https://docs.python.org/3.8/library/concurrent.futures.html#module-concurrent.futures" target="_blank" rel="noopener">the documentation on <em>concurrent.futures</em></a>. And if ever <em>concurrent.futures</em> is not enough and you need more control over your parallelization tasks, check <a href="https://docs.python.org/3.8/library/concurrency.html" target="_blank" rel="noopener">the concurrent execution chapter of the documentation</a>, which describes other useful modules. Keep in mind, though, that because of <a href="https://realpython.com/python-gil/" target="_blank" rel="noopener">Python&rsquo;s GIL</a>, using thread-based parallelization is useless for computationally intensive tasks. Always pick process-based paralelization in these cases.</p>
@@ -368,7 +368,7 @@
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2020-09-26 15:51:12 -03" style="cursor:help">
+        <span title="Updated @ 2020-09-26 15:53:56 -03" style="cursor:help">
 
 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-09-26</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-09-26</text></g></svg>
         </span></div>
