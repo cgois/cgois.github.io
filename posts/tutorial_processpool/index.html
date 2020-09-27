@@ -18,7 +18,7 @@
 
     
     
-        <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js" defer></script><script src="/js/meme.min.33dab1f64a89b02336cf59d3a12eed39b24f71992923afa559130bd0b71803a7.js" integrity="sha256-M9qx9kqJsCM2z1nToS7tObJPcZkpI6&#43;lWRML0LcYA6c="></script>
+        <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js" defer></script><script src="/js/meme.min.184027b38b3353eb43afbc50b89ac7710a6b9663f00fe005e3b5b591b40379d9.js" integrity="sha256-GEAns4szU&#43;tDr7xQuJrHcQprlmPwD&#43;AF47W1kbQDedk="></script>
 
     
 
@@ -54,7 +54,7 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2020-09-26T13:54:40-03:00",
-        "dateModified": "2020-09-27T13:22:21-03:00",
+        "dateModified": "2020-09-27T16:24:37-03:00",
         "url": "https://cgois.github.io/posts/tutorial_processpool/",
         "headline": "Parallelizing simple loops in Python",
         "description": "Parallelizing loops with no iteration interdependence using Pythons’ concurrent.futures module.",
@@ -98,7 +98,7 @@
 <meta property="og:locale" content="en" /><meta property="og:image" content="https://cgois.github.io/tutorial_processpool_plot.png" />
 <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2020-09-26T13:54:40-03:00" />
-    <meta property="article:modified_time" content="2020-09-27T13:22:21-03:00" />
+    <meta property="article:modified_time" content="2020-09-27T16:24:37-03:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -278,7 +278,7 @@
 </div>
 </div><p>This will, of course, take around forty seconds, as each query to $f$ takes two seconds (you may even <a href="https://docs.python.org/3.8/library/timeit.html" target="_blank" rel="noopener">timeit</a> if you&rsquo;d like). But we can clearly see this loop has no iteration interdependence at all, as it has no state changes. This means it&rsquo;ll be extremely simple to parallelize it.</p>
 <p>[Sometimes things are not so simple, though. It&rsquo;s common to find poorly written loops that <em>do</em> have state changes in between iterations, but that <em>needn&rsquo;t</em> have (which probably also means it <em>shouldn&rsquo;t</em> be updating variables all over the place). In those cases, some sections of your code may need to be rewritten to be amenable to mapping. You&rsquo;ll see why in a bit.]</p>
-<p>Python supports some functional programming tools, and the easiest way to spawn parallel processes with <em>concurrent.futures</em> is to use a <em>ProcessPoolExecutor</em> and its <em>map</em> method. Mapping refers to applying a transformation to a list of objects. The following line will apply $f$ to each element in the sequence given as the second argument to <em>map</em>.</p>
+<p>Python supports some functional programming tools, and the easiest way to spawn parallel processes with <em>concurrent.futures</em> is to use a <em>ProcessPoolExecutor</em> and its <em>map</em> method. Mapping refers to applying a transformation to a list of objects. The following example applies $f$ to each element in the sequence given as the second argument to <em>map</em>, and will put $f(\mathcal{X})$ into <code>yvals</code>.</p>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -290,7 +290,7 @@
 </code></pre></td></tr></table></div>
 </div>
 </div><p>[Note this will return you an <em>iterator</em>, and not straightly the list of $f(x)$'s. To get the list you must iterate over the mapping with <code>list(yvals)</code>]</p>
-<p>This will put all $f(x)$ values into <code>yvals</code>, and this type of mapping is trivially parallelizable. It all boils down to creating the <em>executor</em> with as many workers as you&rsquo;d like (this should be the at most the number of threads supported by your CPU), and applying its <em>map</em> method to the values we want to compute. You can either set the number of workers manually, or get <code>cpu_count</code>automatically:</p>
+<p>While <code>map</code> is still serially applying $f$, it&rsquo;s trivially parallelizable. It all boils down to creating the <em>executor</em> with as many workers as you&rsquo;d like (this should be the at most the number of threads supported by your CPU), and applying its own <em>map</em> method to the values we want to compute. You can either set the number of workers manually, or get <code>cpu_count</code>automatically:</p>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -409,7 +409,7 @@
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2020-09-27 13:22:21 -03" style="cursor:help">
+        <span title="Updated @ 2020-09-27 16:24:37 -03" style="cursor:help">
 
 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-09-27</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-09-27</text></g></svg>
         </span></div>

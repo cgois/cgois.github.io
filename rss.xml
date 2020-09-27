@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sun, 27 Sep 2020 13:22:29 -0300</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2020 16:24:48 -0300</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://cgois.github.io/rss.xml" />
         
@@ -74,7 +74,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;This will, of course, take around forty seconds, as each query to $f$ takes two seconds (you may even &lt;a href=&#34;https://docs.python.org/3.8/library/timeit.html&#34;&gt;timeit&lt;/a&gt; if you&amp;rsquo;d like). But we can clearly see this loop has no iteration interdependence at all, as it has no state changes. This means it&amp;rsquo;ll be extremely simple to parallelize it.&lt;/p&gt;
 &lt;p&gt;[Sometimes things are not so simple, though. It&amp;rsquo;s common to find poorly written loops that &lt;em&gt;do&lt;/em&gt; have state changes in between iterations, but that &lt;em&gt;needn&amp;rsquo;t&lt;/em&gt; have (which probably also means it &lt;em&gt;shouldn&amp;rsquo;t&lt;/em&gt; be updating variables all over the place). In those cases, some sections of your code may need to be rewritten to be amenable to mapping. You&amp;rsquo;ll see why in a bit.]&lt;/p&gt;
-&lt;p&gt;Python supports some functional programming tools, and the easiest way to spawn parallel processes with &lt;em&gt;concurrent.futures&lt;/em&gt; is to use a &lt;em&gt;ProcessPoolExecutor&lt;/em&gt; and its &lt;em&gt;map&lt;/em&gt; method. Mapping refers to applying a transformation to a list of objects. The following line will apply $f$ to each element in the sequence given as the second argument to &lt;em&gt;map&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Python supports some functional programming tools, and the easiest way to spawn parallel processes with &lt;em&gt;concurrent.futures&lt;/em&gt; is to use a &lt;em&gt;ProcessPoolExecutor&lt;/em&gt; and its &lt;em&gt;map&lt;/em&gt; method. Mapping refers to applying a transformation to a list of objects. The following example applies $f$ to each element in the sequence given as the second argument to &lt;em&gt;map&lt;/em&gt;, and will put $f(\mathcal{X})$ into &lt;code&gt;yvals&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -86,7 +86,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;[Note this will return you an &lt;em&gt;iterator&lt;/em&gt;, and not straightly the list of $f(x)$&#39;s. To get the list you must iterate over the mapping with &lt;code&gt;list(yvals)&lt;/code&gt;]&lt;/p&gt;
-&lt;p&gt;This will put all $f(x)$ values into &lt;code&gt;yvals&lt;/code&gt;, and this type of mapping is trivially parallelizable. It all boils down to creating the &lt;em&gt;executor&lt;/em&gt; with as many workers as you&amp;rsquo;d like (this should be the at most the number of threads supported by your CPU), and applying its &lt;em&gt;map&lt;/em&gt; method to the values we want to compute. You can either set the number of workers manually, or get &lt;code&gt;cpu_count&lt;/code&gt;automatically:&lt;/p&gt;
+&lt;p&gt;While &lt;code&gt;map&lt;/code&gt; is still serially applying $f$, it&amp;rsquo;s trivially parallelizable. It all boils down to creating the &lt;em&gt;executor&lt;/em&gt; with as many workers as you&amp;rsquo;d like (this should be the at most the number of threads supported by your CPU), and applying its own &lt;em&gt;map&lt;/em&gt; method to the values we want to compute. You can either set the number of workers manually, or get &lt;code&gt;cpu_count&lt;/code&gt;automatically:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
