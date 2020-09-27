@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">cgois</title>
     <subtitle type="html"></subtitle>
-    <updated>2020-09-27T16:24:48-03:00</updated>
+    <updated>2020-09-27T16:26:02-03:00</updated>
     <id>https://cgois.github.io/</id>
     <link rel="alternate" type="text/html" href="https://cgois.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://cgois.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">Parallelizing simple loops in Python</title>
             <link rel="alternate" type="text/html" href="https://cgois.github.io/posts/tutorial_processpool/" />
             <id>https://cgois.github.io/posts/tutorial_processpool/</id>
-            <updated>2020-09-27T16:24:37-03:00</updated>
+            <updated>2020-09-27T16:25:55-03:00</updated>
             <published>2020-09-26T13:54:40-03:00</published>
             <author>
                     <name>Carlos de Gois</name>
@@ -63,7 +63,7 @@
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;x2pairs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;linspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;This will, of course, take around forty seconds, as each query to $f$ takes two seconds (you may even &lt;a href=&#34;https://docs.python.org/3.8/library/timeit.html&#34;&gt;timeit&lt;/a&gt; if you&amp;rsquo;d like). But we can clearly see this loop has no iteration interdependence at all, as it has no state changes. This means it&amp;rsquo;ll be extremely simple to parallelize it.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;This will, of course, take around forty seconds, as each query to $f$ takes two seconds (you may even &lt;a href=&#34;https://docs.python.org/3.8/library/timeit.html&#34;&gt;timeit&lt;/a&gt; if you&amp;rsquo;d like). But we can clearly see this loop has no iteration interdependence at all, as it has no state changes. This means it&amp;rsquo;ll be extremely simple to parallelize it if we rewrite it as a mapping.&lt;/p&gt;
 &lt;p&gt;[Sometimes things are not so simple, though. It&amp;rsquo;s common to find poorly written loops that &lt;em&gt;do&lt;/em&gt; have state changes in between iterations, but that &lt;em&gt;needn&amp;rsquo;t&lt;/em&gt; have (which probably also means it &lt;em&gt;shouldn&amp;rsquo;t&lt;/em&gt; be updating variables all over the place). In those cases, some sections of your code may need to be rewritten to be amenable to mapping. You&amp;rsquo;ll see why in a bit.]&lt;/p&gt;
 &lt;p&gt;Python supports some functional programming tools, and the easiest way to spawn parallel processes with &lt;em&gt;concurrent.futures&lt;/em&gt; is to use a &lt;em&gt;ProcessPoolExecutor&lt;/em&gt; and its &lt;em&gt;map&lt;/em&gt; method. Mapping refers to applying a transformation to a list of objects. The following example applies $f$ to each element in the sequence given as the second argument to &lt;em&gt;map&lt;/em&gt;, and will put $f(\mathcal{X})$ into &lt;code&gt;yvals&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
