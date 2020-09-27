@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sun, 27 Sep 2020 13:02:34 -0300</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2020 13:22:29 -0300</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://cgois.github.io/rss.xml" />
         
@@ -132,7 +132,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://cgois.github.io/tutorial_processpool_tqdm.png&#34; alt=&#34;tqdm progress bar&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This may actually be useful when you have a huge computation to run, but do not trust its time estimation, as it&amp;rsquo;ll only be precise when the function applications take the same time for any parameter, which is not always the case. The &lt;code&gt;total&lt;/code&gt; parameter, telling &lt;code&gt;tqdm&lt;/code&gt; how many elements we&amp;rsquo;ll be mapping onto, is not mandatory, but without it you&amp;rsquo;ll only get an iteration count, without the pretty progress bar.&lt;/p&gt;
+&lt;p&gt;The progress bar may actually be useful when you have a huge computation to run and want to check its progress along the way. But do not trust the time estimation, as it&amp;rsquo;ll only be precise when the function applications take the same time for any parameter, which is not always the case. The &lt;code&gt;total&lt;/code&gt; parameter, telling &lt;code&gt;tqdm&lt;/code&gt; how many elements we&amp;rsquo;ll be mapping onto, is not mandatory, but without it you&amp;rsquo;ll only get an iteration count, without the pretty progress bar.&lt;/p&gt;
 &lt;p&gt;All this was done to an artificially simple problem. For actual use cases, you&amp;rsquo;ll possibly have to adapt you existing code&amp;rsquo;s structure to be able to use this method of parallelization, but it shouldn&amp;rsquo;t be hard to do so.&lt;/p&gt;
 &lt;p&gt;There are also other useful patterns when parallelizing with concurrent.futures, such as using &lt;code&gt;functools.partial&lt;/code&gt; to partially apply arguments to a function before calling &lt;code&gt;executor.map&lt;/code&gt; on the sequence of parameters. This is very useful if your function takes more than one parameter and you want to set some constant ones before mapping. In case you don&amp;rsquo;t wanna define a whole new function, &lt;code&gt;itertools.repeat&lt;/code&gt; would also be a good choice in these cases, as it will repeat any argument given to it indefinitely and lazily. Here is an example in which we&amp;rsquo;ll generate a paraboloid like $f(x, y) = a (x^2 + y^2)$, for constant $a$.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
