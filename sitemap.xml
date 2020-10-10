@@ -3,8 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cgois.github.io/posts/panda2lrs/</loc>
+    <lastmod>2020-10-10T18:54:53-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cgois.github.io/</loc>
-    <lastmod>2020-09-27T16:26:30-03:00</lastmod>
+    <lastmod>2020-10-10T18:54:53-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/tags/inequalities/</loc>
+    <lastmod>2020-10-10T18:54:53-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/tags/polytopes/</loc>
+    <lastmod>2020-10-10T18:54:53-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/posts/</loc>
+    <lastmod>2020-10-10T18:54:53-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/tags/</loc>
+    <lastmod>2020-10-10T18:54:53-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/categories/tools/</loc>
+    <lastmod>2020-10-10T18:54:53-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/tags/vertex-enumeration/</loc>
+    <lastmod>2020-10-10T18:54:53-03:00</lastmod>
   </url>
   
   <url>
@@ -23,22 +58,12 @@
   </url>
   
   <url>
-    <loc>https://cgois.github.io/posts/</loc>
-    <lastmod>2020-09-27T16:26:30-03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cgois.github.io/categories/programming/</loc>
     <lastmod>2020-09-27T16:26:30-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://cgois.github.io/tags/python/</loc>
-    <lastmod>2020-09-27T16:26:30-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cgois.github.io/tags/</loc>
     <lastmod>2020-09-27T16:26:30-03:00</lastmod>
   </url>
   

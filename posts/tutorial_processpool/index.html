@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.74.3" /><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.75.1" /><meta name="theme-color" content="#fff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
@@ -14,7 +14,7 @@
 
     <title>Parallelizing simple loops in Python | cgois</title>
 
-    <link rel="stylesheet" href="/css/meme.min.9acfca7cb837cef31277968b5bec808487d627b3e6918d8bff4a93efa7ba7eab.css" integrity="sha256-ms/KfLg3zvMSd5aLW&#43;yAhIfWJ7PmkY2L/0qT76e6fqs=" />
+    <link rel="stylesheet" href="/css/meme.min.edb9e4cc75537b3914779707e2b7ede000d6fc6e19356e9471b9d49630e408ed.css" integrity="sha256-7bnkzHVTezkUd5cH4rft4ADW/G4ZNW6UcbnUljDkCO0=" />
 
     
     
@@ -27,7 +27,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM&#43;Plex&#43;Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Comfortaa:wght@700&amp;display=swap" media="print" onload="this.media='all'" />
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM&#43;Plex&#43;Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Comfortaa:wght@700&amp;display=swap" /></noscript>
 
-    <meta name="author" content="Carlos de Gois" /><meta name="description" content="Parallelizing loops with no iteration interdependence using Pythons’ concurrent.futures module." />
+    <meta name="author" content="Carlos de Gois" /><meta name="description" content="Parallelizing loops with no iteration interdependence using Pythons&#39; concurrent.futures module." />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
@@ -57,7 +57,7 @@
         "dateModified": "2020-09-27T16:26:30-03:00",
         "url": "https://cgois.github.io/posts/tutorial_processpool/",
         "headline": "Parallelizing simple loops in Python",
-        "description": "Parallelizing loops with no iteration interdependence using Pythons’ concurrent.futures module.",
+        "description": "Parallelizing loops with no iteration interdependence using Pythons' concurrent.futures module.",
         "inLanguage" : "en",
         "articleSection": "posts",
         "wordCount":  1239 ,
@@ -92,7 +92,7 @@
 
 
 <meta property="og:title" content="Parallelizing simple loops in Python" />
-<meta property="og:description" content="Parallelizing loops with no iteration interdependence using Pythons’ concurrent.futures module." />
+<meta property="og:description" content="Parallelizing loops with no iteration interdependence using Pythons&#39; concurrent.futures module." />
 <meta property="og:url" content="https://cgois.github.io/posts/tutorial_processpool/" />
 <meta property="og:site_name" content="cgois" />
 <meta property="og:locale" content="en" /><meta property="og:image" content="https://cgois.github.io/tutorial_processpool_plot.png" />
@@ -289,7 +289,7 @@
 <span class="n">yvals</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">xvals</span><span class="p">)</span>
 </code></pre></td></tr></table></div>
 </div>
-</div><p>[Note this will return you an <em>iterator</em>, and not straightly the list of $f(x)$'s. To get the list you must iterate over the mapping with <code>list(yvals)</code>]</p>
+</div><p>[Note this will return you an <em>iterator</em>, and not straightly the list of $f(x)$&rsquo;s. To get the list you must iterate over the mapping with <code>list(yvals)</code>]</p>
 <p>While <code>map</code> is still serially applying $f$, it&rsquo;s trivially parallelizable. It all boils down to creating the <em>executor</em> with as many workers as you&rsquo;d like (this should be the at most the number of threads supported by your CPU), and applying its own <em>map</em> method to the values we want to compute. You can either set the number of workers manually, or get <code>cpu_count</code>automatically:</p>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -517,6 +517,15 @@
     
     
     
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/posts/panda2lrs/" rel="prev">&lt; <em>panda2lrs</em>: user friendly polytope representation in lrs</a>
+                </li>
+            
+            
+        </ul>
     
 
 
