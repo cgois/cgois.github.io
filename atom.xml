@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">cgois</title>
     <subtitle type="html"></subtitle>
-    <updated>2020-10-12T10:36:14-03:00</updated>
+    <updated>2020-10-12T10:39:36-03:00</updated>
     <id>https://cgois.github.io/</id>
     <link rel="alternate" type="text/html" href="https://cgois.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://cgois.github.io/atom.xml" />
@@ -20,14 +20,14 @@
             <title type="text">panda2lrs: user-friendly polytope representation in lrs</title>
             <link rel="alternate" type="text/html" href="https://cgois.github.io/posts/panda2lrs/" />
             <id>https://cgois.github.io/posts/panda2lrs/</id>
-            <updated>2020-10-11T16:32:48-03:00</updated>
+            <updated>2020-10-12T10:39:24-03:00</updated>
             <published>2020-10-04T02:46:32-03:00</published>
             <author>
                     <name>Carlos de Gois</name>
                     <uri>https://cgois.github.io/</uri>
                     <email>carlosbgois@gmail.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">An user-friendly way to write &lt;em&gt;PANDA&lt;/em&gt;-like polytope inequalities to &lt;em&gt;lrs&lt;/em&gt;.</summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">An user-friendly way to write &lt;em&gt;PANDA&lt;/em&gt;-like polytope inequalities and run in &lt;em&gt;lrs&lt;/em&gt;.</summary>
             
                 <content type="html">&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Both &lt;a href=&#34;http://comopt.ifi.uni-heidelberg.de/software/PANDA/&#34;&gt;&lt;em&gt;PANDA&lt;/em&gt;&lt;/a&gt; and &lt;a href=&#34;http://cgm.cs.mcgill.ca/~avis/C/lrs.html&#34;&gt;&lt;em&gt;lrs&lt;/em&gt;&lt;/a&gt; (or, for that matter, also &lt;a href=&#34;http://porta.zib.de/&#34;&gt;&lt;em&gt;PORTA&lt;/em&gt;&lt;/a&gt; and &lt;a href=&#34;https://github.com/cddlib/cddlib&#34;&gt;&lt;em&gt;cdd&lt;/em&gt;&lt;/a&gt;) are useful tools to solve vertex enumeration and convex hull problems, which are common tasks in computational geometry and quantum foundations. Apart from implementing different algorithms, they also differ in their input specifications, and when dealing with inequalities, &lt;em&gt;PANDA&lt;/em&gt; is vastly more user-friendly than &lt;em&gt;lrs&lt;/em&gt;. Take, for instance, this cube:&lt;/p&gt;
