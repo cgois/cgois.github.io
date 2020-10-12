@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">cgois</title>
     <subtitle type="html"></subtitle>
-    <updated>2020-10-11T12:47:23-03:00</updated>
+    <updated>2020-10-12T10:36:14-03:00</updated>
     <id>https://cgois.github.io/</id>
     <link rel="alternate" type="text/html" href="https://cgois.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://cgois.github.io/atom.xml" />
@@ -17,20 +17,20 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.75.1">Hugo</generator>
         <entry>
-            <title type="text">panda2lrs: user friendly polytope representation in lrs</title>
+            <title type="text">panda2lrs: user-friendly polytope representation in lrs</title>
             <link rel="alternate" type="text/html" href="https://cgois.github.io/posts/panda2lrs/" />
             <id>https://cgois.github.io/posts/panda2lrs/</id>
-            <updated>2020-10-10T18:54:53-03:00</updated>
+            <updated>2020-10-11T16:32:48-03:00</updated>
             <published>2020-10-04T02:46:32-03:00</published>
             <author>
                     <name>Carlos de Gois</name>
                     <uri>https://cgois.github.io/</uri>
                     <email>carlosbgois@gmail.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">A simpler, &lt;em&gt;PANDA&lt;/em&gt;-inspired way to write any polytope defining inequalities for vertex enumeration in &lt;em&gt;lrs&lt;/em&gt;.</summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">An user-friendly way to write &lt;em&gt;PANDA&lt;/em&gt;-like polytope inequalities to &lt;em&gt;lrs&lt;/em&gt;.</summary>
             
                 <content type="html">&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Both &lt;a href=&#34;http://comopt.ifi.uni-heidelberg.de/software/PANDA/&#34;&gt;&lt;em&gt;PANDA&lt;/em&gt;&lt;/a&gt; and &lt;a href=&#34;http://cgm.cs.mcgill.ca/~avis/C/lrs.html&#34;&gt;&lt;em&gt;lrs&lt;/em&gt;&lt;/a&gt; (or, for that matter, also &lt;a href=&#34;http://porta.zib.de/&#34;&gt;&lt;em&gt;PORTA&lt;/em&gt;&lt;/a&gt; and &lt;a href=&#34;https://github.com/cddlib/cddlib&#34;&gt;&lt;em&gt;cdd&lt;/em&gt;&lt;/a&gt;) are useful tools to solve vertex enumeration and convex hull problems, which are common tasks in computational geometry and quantum foundations. Apart from implementing different algorithms, they also differ in their input specifications, and when dealing with inequalities, &lt;em&gt;PANDA&lt;/em&gt; is vastly more user friendly than &lt;em&gt;lrs&lt;/em&gt;. Take, for instance, this cube:&lt;/p&gt;
+&lt;p&gt;Both &lt;a href=&#34;http://comopt.ifi.uni-heidelberg.de/software/PANDA/&#34;&gt;&lt;em&gt;PANDA&lt;/em&gt;&lt;/a&gt; and &lt;a href=&#34;http://cgm.cs.mcgill.ca/~avis/C/lrs.html&#34;&gt;&lt;em&gt;lrs&lt;/em&gt;&lt;/a&gt; (or, for that matter, also &lt;a href=&#34;http://porta.zib.de/&#34;&gt;&lt;em&gt;PORTA&lt;/em&gt;&lt;/a&gt; and &lt;a href=&#34;https://github.com/cddlib/cddlib&#34;&gt;&lt;em&gt;cdd&lt;/em&gt;&lt;/a&gt;) are useful tools to solve vertex enumeration and convex hull problems, which are common tasks in computational geometry and quantum foundations. Apart from implementing different algorithms, they also differ in their input specifications, and when dealing with inequalities, &lt;em&gt;PANDA&lt;/em&gt; is vastly more user-friendly than &lt;em&gt;lrs&lt;/em&gt;. Take, for instance, this cube:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Names
 x y z
 Inequalities
@@ -51,9 +51,9 @@ begin
 1 0 -1 0
 1 0 0 -1
 end
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;as lrs expects all inequalities to follow the form $a_0 + a_1 x_1 + \ldots + a_{n-1} x_{n-1} \geq 0$. When writing larger polytopes by hand, this quickly becomes unreadable and error-prone, so I made a parser to convert a *PANDA*-like H-representation file to an *lrs* one.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;as lrs expects inequalities of the form $a_0 + a_1 x_1 + \ldots + a_{n-1} x_{n-1} \geq 0$. When writing larger polytopes by hand, this quickly becomes unreadable and error-prone, so I made a parser to convert a *PANDA*-like H-representation file to an *lrs* one.&lt;/p&gt;
 &lt;h2 id=&#34;file-specifications&#34;&gt;File specifications&lt;/h2&gt;
-&lt;p&gt;Any input to the parser should have a &lt;em&gt;Names&lt;/em&gt; section with variables names separated by a blank space, and may optionally have an &lt;em&gt;Equations&lt;/em&gt; and an &lt;em&gt;Inequalities&lt;/em&gt; section (but at least one of those, for obvious reasons). Any constants must be on the RHS of any expression. Hence, the first snipped would be valid, and this also would:&lt;/p&gt;
+&lt;p&gt;Any input to the parser should have a &lt;em&gt;Names&lt;/em&gt; section with variables names separated by a blank space, an &lt;em&gt;Inequalities&lt;/em&gt; section, and may optionally have &lt;em&gt;Equations&lt;/em&gt;. Any constants must be on the RHS of any expression. Hence, the first snippet would be valid, and this one also would:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Names
 A1 A2 B1 B2
 Equations
@@ -63,7 +63,7 @@ Inequalities
 A1 - 2A2 &amp;gt;= 0
 B1 &amp;gt;= 0
 B2 &amp;lt;= 0
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Calling &lt;a href=&#34;https://github.com/cgois/misc/blob/main/panda2lrs.py&#34;&gt;panda2lrs.py&lt;/a&gt; on this input would readily output an lrs readable file. If you don&amp;rsquo;t care for implementation details and just wanna know how to use it, you should skip the next section.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Calling &lt;a href=&#34;https://github.com/cgois/misc/blob/main/panda2lrs.py&#34;&gt;panda2lrs.py&lt;/a&gt; on this input would readily output an lrs readable file, with equation turned into two inequalities, and each inequality manipulated to what &lt;em&gt;lrs&lt;/em&gt; expects. If you don&amp;rsquo;t care for implementation details and just wanna know how to use it, you can skip the next section and see the usage details at the end.&lt;/p&gt;
 &lt;h2 id=&#34;implementation-details&#34;&gt;*Implementation details&lt;/h2&gt;
 &lt;p&gt;From &lt;em&gt;lrs&lt;/em&gt;&amp;rsquo;s user guide, we know that any H-representation input must have the structure&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;H-representation
@@ -169,7 +169,7 @@ end
                     &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;expression&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;expressions&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;indexes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Inequalities&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:]]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Finally, to wrap it up, I concatenate these lists and format them in a way that &lt;em&gt;lrs&lt;/em&gt; will understand by asking&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;To wrap it up, I concatenate these lists and format them in a way that &lt;em&gt;lrs&lt;/em&gt; will understand by asking&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -194,7 +194,7 @@ begin
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
 &lt;p&gt;You can find &lt;code&gt;panda2lrs.py&lt;/code&gt; &lt;a href=&#34;https://github.com/cgois/misc/blob/main/panda2lrs.py&#34;&gt;in here&lt;/a&gt;. Given an input with the aforementioned specifications, running this is quite simple: call &lt;code&gt;python panda2lrs.py input&lt;/code&gt; to print the results to the screen, or &lt;code&gt;python panda2lrs.py input output&lt;/code&gt; to directly write to a file named &lt;code&gt;output&lt;/code&gt; &lt;strong&gt;(if a file with the same name already exists, it&amp;rsquo;ll be overwritten!)&lt;/strong&gt;. You can then feed &lt;code&gt;output&lt;/code&gt; to lrs and watch it search your vertices.&lt;/p&gt;
-&lt;p&gt;I still haven&amp;rsquo;t used it much, so it&amp;rsquo;s still probably a bit buggy. Please let me know if you find any issues (:&lt;/p&gt;
+&lt;p&gt;I still haven&amp;rsquo;t used it much, so there may be some bugs. Please let me know if you find any issues (:&lt;/p&gt;
 </content>
             
             
