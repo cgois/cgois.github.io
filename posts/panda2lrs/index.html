@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.75.1" /><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.80.0" /><meta name="theme-color" content="#fff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
@@ -18,7 +18,7 @@
 
     
     
-        <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js" defer></script><script src="/js/meme.min.184027b38b3353eb43afbc50b89ac7710a6b9663f00fe005e3b5b591b40379d9.js" integrity="sha256-GEAns4szU&#43;tDr7xQuJrHcQprlmPwD&#43;AF47W1kbQDedk="></script>
+        <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js" defer></script><script src="/js/meme.min.1cd16711d8ed78b7b29735eab2c3b310cb5787e5a1c9dd0df0a3a2779f4e5b76.js" integrity="sha256-HNFnEdjteLeylzXqssOzEMtXh&#43;Whyd0N8KOid59OW3Y="></script>
 
     
 
@@ -54,13 +54,13 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2020-10-04T02:46:32-03:00",
-        "dateModified": "2020-10-12T10:39:24-03:00",
+        "dateModified": "2020-10-13T18:22:14-03:00",
         "url": "https://cgois.github.io/posts/panda2lrs/",
         "headline": "panda2lrs: user-friendly polytope representation in lrs",
         "description": "An user-friendly way to write PANDA-like polytope inequalities and run in lrs.",
         "inLanguage" : "en",
         "articleSection": "posts",
-        "wordCount":  876 ,
+        "wordCount":  872 ,
         "author": {
             "@type": "Person",
             "email": "carlosbgois@gmail.com",
@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="cgois" />
 <meta property="og:locale" content="en" /><meta property="og:type" content="article" />
     <meta property="article:published_time" content="2020-10-04T02:46:32-03:00" />
-    <meta property="article:modified_time" content="2020-10-12T10:39:24-03:00" />
+    <meta property="article:modified_time" content="2020-10-13T18:22:14-03:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -226,7 +226,7 @@
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;876</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;872</span>
     
     
         
@@ -280,7 +280,7 @@ Inequalities
 A1 - 2A2 &gt;= 0
 B1 &gt;= 0
 B2 &lt;= 0
-</code></pre><p>Calling <a href="https://github.com/cgois/misc/blob/main/panda2lrs.py" target="_blank" rel="noopener">panda2lrs.py</a> on this input would readily output an lrs readable file, with equation turned into two inequalities, and each inequality manipulated to what <em>lrs</em> expects. If you don&rsquo;t care for implementation details and just wanna know how to use it, you can skip the next section and see the usage details at the end.</p>
+</code></pre><p>Calling <a href="https://github.com/cgois/misc/blob/main/panda2lrs.py" target="_blank" rel="noopener">panda2lrs.py</a> on this input would readily output an lrs readable file, with each equation turned into two inequalities, and each inequality manipulated to what <em>lrs</em> expects. If you don&rsquo;t care for implementation details and just wanna know how to use it, you can skip the next section and see the usage details at the end.</p>
 <h2 id="implementation-details"><a href="#implementation-details" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:implementation-details" class="headings">*Implementation details</a></h2>
 <p>From <em>lrs</em>&rsquo;s user guide, we know that any H-representation input must have the structure</p>
 <pre><code>H-representation
@@ -354,13 +354,11 @@ end
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Extract equations&#39; coefficients and turn them into two inequalities.</span>
 <span class="n">equations</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">if</span> <span class="s2">&#34;Equations&#34;</span> <span class="ow">in</span> <span class="n">indexes</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-    <span class="c1"># This is where the equations section ends.</span>
     <span class="n">end</span> <span class="o">=</span> <span class="n">indexes</span><span class="p">[</span><span class="s2">&#34;Inequalities&#34;</span><span class="p">]</span> <span class="k">if</span> <span class="s2">&#34;Inequalities&#34;</span> <span class="ow">in</span> <span class="n">indexes</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
 
     <span class="k">for</span> <span class="n">expression</span> <span class="ow">in</span> <span class="n">expressions</span><span class="p">[</span><span class="n">indexes</span><span class="p">[</span><span class="s2">&#34;Equations&#34;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:</span><span class="n">end</span><span class="p">]:</span>
@@ -368,7 +366,7 @@ end
         <span class="n">equations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="o">-</span><span class="n">x</span><span class="p">,</span> <span class="n">equations</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])))</span>
 </code></pre></td></tr></table></div>
 </div>
-</div><p>Note that <em>lrs</em> doesn&rsquo;t support equalities, so I turn each input equality into two inequalities.</p>
+</div><p>Note that <em>lrs</em> doesn&rsquo;t support equalities, so I turn each input equality into two inequalities in the last line.</p>
 <p>The following step is essentially the same, but now parsing the <em>in</em>equalities:</p>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -386,7 +384,7 @@ end
                     <span class="k">for</span> <span class="n">expression</span> <span class="ow">in</span> <span class="n">expressions</span><span class="p">[</span><span class="n">indexes</span><span class="p">[</span><span class="s2">&#34;Inequalities&#34;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]]</span>
 </code></pre></td></tr></table></div>
 </div>
-</div><p>To wrap it up, I concatenate these lists and format them in a way that <em>lrs</em> will understand by asking</p>
+</div><p>To wrap everything up, I concatenate these lists and format them in a way that <em>lrs</em> will understand by asking</p>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -440,9 +438,9 @@ end
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2020-10-12 10:39:24 -03" style="cursor:help">
+        <span title="Updated @ 2020-10-13 18:22:14 -03" style="cursor:help">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-10-12</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-10-12</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-10-13</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-10-13</text></g></svg>
         </span></div>
 
 
@@ -551,9 +549,13 @@ end
     
         <ul class="post-nav">
             
+                <li class="post-nav-prev">
+                    <a href="/posts/cvx_vs_picos/" rel="prev">&lt; CVXPY vs. PICOS: performance comparison for linear programs</a>
+                </li>
+            
             
                 <li class="post-nav-next">
-                    <a href="/posts/tutorial_processpool/" rel="next">Parallelizing simple loops in Python &gt;</a>
+                    <a href="/posts/processpool/" rel="next">Parallelizing simple loops in Python &gt;</a>
                 </li>
             
         </ul>
@@ -577,7 +579,7 @@ end
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            <div class="site-info">©&nbsp;2020&nbsp;Carlos de Gois</div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
+            <div class="site-info">©&nbsp;2021&nbsp;Carlos de Gois</div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
 
             
     
