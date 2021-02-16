@@ -54,14 +54,14 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2021-01-10T13:54:40-03:00",
-        "dateModified": "2021-02-15T15:12:09-03:00",
+        "dateModified": "2021-02-15T23:15:19-03:00",
         "url": "https://cgois.github.io/posts/cvx_vs_picos/",
         "headline": "CVXPY vs. PICOS: performance comparison for linear programs",
         "description": "CVXPY and PICOS are two frequently used optimization program modelling tools for Python. I compare their performance in modelling simple random linear programs.",
         "inLanguage" : "en",
         "articleSection": "posts",
-        "wordCount":  1216 ,
-        "image": ["https://cgois.github.io/convex_program_hierarchy.png","https://cgois.github.io/cvxpy_vs_picos_gurobi.png"],
+        "wordCount":  1307 ,
+        "image": ["https://cgois.github.io/convex_program_hierarchy.png","https://cgois.github.io/cvxpy_vs_picos_gurobi_old.png","https://cgois.github.io/cvxpy_vs_picos_gurobi_new.png"],
         "author": {
             "@type": "Person",
             "email": "carlosbgois@gmail.com",
@@ -98,7 +98,7 @@
 <meta property="og:locale" content="en" /><meta property="og:image" content="https://cgois.github.io/convex_program_hierarchy.png" />
 <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2021-01-10T13:54:40-03:00" />
-    <meta property="article:modified_time" content="2021-02-15T15:12:09-03:00" />
+    <meta property="article:modified_time" content="2021-02-15T23:15:19-03:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -229,11 +229,11 @@
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1216</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1307</span>
     
     
         
-        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;6&nbsp;mins</span>
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;7&nbsp;mins</span>
     
     
     
@@ -241,15 +241,21 @@
 
             
 
-            <nav class="contents"></nav><div class="post-body e-content">
-              <h1 id="introduction"><a href="#introduction" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:introduction" class="headings">Introduction</a></h1>
+            <nav class="contents">
+  <h2 id="contents" class="contents-title">Contents</h2><ol class="toc">
+    <li><a id="contents:introduction-to-modelling-apis" href="#introduction-to-modelling-apis">Introduction to modelling APIs</a></li>
+    <li><a id="contents:performance-comparison" href="#performance-comparison">Performance comparison</a></li>
+    <li><a id="contents:-updated-comparison-for-new-versions" href="#-updated-comparison-for-new-versions">(!) Updated comparison for new versions</a></li>
+  </ol>
+</nav><div class="post-body e-content">
+              <h2 id="introduction-to-modelling-apis"><a href="#introduction-to-modelling-apis" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:introduction-to-modelling-apis" class="headings">Introduction to modelling APIs</a></h2>
 <p style="text-indent:0"><span class="drop-cap">M</span>athematical optimization is the ubiquitous discipline of searching extrema of functions. While well-behaved (e.g., differentiable) functions without too cumbersome constraints on their variables can be optimized via several available methods (e.g., gradient descent), it is usually hard to guarantee the solution will converge to a <em>global</em> extremum. Luckily, this can be done, in general, when optimizing convex functions over convex sets. The discipline of <em>convex optimization</em> can be further narrowed to several sub-problems, such as semidefinite programming (SDP) and linear programming (LP), which consist of optimizing a linear function over a spectrahedron or over a polytope, respectively. These are two essential and widespread tools in quantum information.</p>
-<p><img src="/convex_program_hierarchy.png" alt="convex hierarchy"></p>
+<img src="/convex_program_hierarchy.png" alt="convex hierarchy" width="550"/>
 <p>There are several important (and some very efficient) algorithms able to solve general and large instances of SDPs and LPs. Thanks to a considerable amount of both open-source and proprietary software (e.g. ECOS, CPLEX, Gurobi, MOSEK etc.), we can make good use of these methods black-box-wise. This is almost convenient, but not quite: each of these solvers have their own interfaces with which you must interact to tell them what problem you want to solve. Telling the solver about your problem is called <em>modelling</em>, and modelling can get quite cumbersome if the solver does not directly support some features of your model, such as complex variables (e.g. Gurobi&rsquo;s interface) and operations (partial trace, partial transpose etc.).</p>
 <p>To our luck, several modelling languages were created. These are higher-level interfaces that turn our job of writing optimization problems into child&rsquo;s play. They do that by providing us with all common operations and converting everything to the solver input under the hood. To switch from one solver to the other then becomes a simple matter of giving a different argument to the modelling API.</p>
 <p>Another great development in the last decades is that, thanks to NumPy and SciPy in general, Python became a reasonable choice for prototyping (and even carrying out) scientific computations. There are several tools for modelling optimization programs in Python, such as CVXPY, PICOS and Pyomo, among others. As the solvers themselves are stand-alone programs, it doesn&rsquo;t matter whether you choose Python or C as an interface. Or at least it shouldn&rsquo;t.</p>
-<h1 id="performance-comparison"><a href="#performance-comparison" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:performance-comparison" class="headings">Performance comparison</a></h1>
-<p>I was writing some reasonably large LPs with CVXPY and solving with Gurobi (a very good choice of solver for LPs with free academic licensing) when I noticed it shouldn&rsquo;t be taking <em>that</em> long to finish. I decided to profile my code and, to my surprise, $99%$ of its running time was spend inside CVXPY&rsquo;s functions, instead of in solving the problem itself. I was further surprised to see that, after switching to PICOS, the same problem got $99%$ of the time spent in the solver. To further compare these two tools, I wrote the script below. It generates random LPs and calls the same solver through PICOS and CVXPY, storing the running times.</p>
+<h2 id="performance-comparison"><a href="#performance-comparison" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:performance-comparison" class="headings">Performance comparison</a></h2>
+<p>I was writing some reasonably large LPs with CVXPY and solving with Gurobi (a very good choice of solver for LPs with free academic licensing) when I noticed it shouldn&rsquo;t be taking <em>that</em> long to finish. I decided to profile my code and, to my surprise, 99% of its running time was spend inside CVXPY&rsquo;s functions, instead of in solving the problem itself. I was further surprised to see that, after switching to PICOS, the same problem got 99% of the time spent in the solver. To further compare these two tools, I wrote the script below. It generates random LPs and calls the same solver through PICOS and CVXPY, storing the running times.</p>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">  1
@@ -372,6 +378,17 @@
 </span><span class="lnt">118
 </span><span class="lnt">119
 </span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="s2">&#34;&#34;&#34;
@@ -388,15 +405,23 @@
 <span class="kn">import</span> <span class="nn">time</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">picos</span> <span class="kn">as</span> <span class="nn">pic</span>
+<span class="kn">import</span> <span class="nn">picos</span>
 <span class="kn">import</span> <span class="nn">cvxopt</span>
 <span class="kn">import</span> <span class="nn">cvxpy</span> <span class="kn">as</span> <span class="nn">cp</span>
 <span class="kn">from</span> <span class="nn">mpl_toolkits</span> <span class="kn">import</span> <span class="n">mplot3d</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
 
+<span class="n">CVX_SOLVER</span> <span class="o">=</span> <span class="n">cp</span><span class="o">.</span><span class="n">GUROBI</span>
+<span class="n">PICOS_SOLVER</span> <span class="o">=</span> <span class="s2">&#34;gurobi&#34;</span>
+<span class="n">SOLVER_NAME</span> <span class="o">=</span> <span class="s2">&#34;GUROBI&#34;</span>
+
+<span class="n">MIN_VARS</span><span class="p">,</span> <span class="n">MAX_VARS</span><span class="p">,</span> <span class="n">STEPS_VARS</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">20</span>
+<span class="n">MIN_CONSTS</span><span class="p">,</span> <span class="n">MAX_CONSTS</span><span class="p">,</span> <span class="n">STEPS_CONSTS</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">8000</span><span class="p">,</span> <span class="mi">100</span>
+
+
 <span class="k">def</span> <span class="nf">timeit</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-    <span class="s2">&#34;&#34;&#34;Add running time of func to returns.&#34;&#34;&#34;</span>
+    <span class="s2">&#34;&#34;&#34;Add running time of func to return vals.&#34;&#34;&#34;</span>
 
     <span class="nd">@functools.wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">timeit_wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -413,27 +438,28 @@
 
     <span class="n">x</span> <span class="o">=</span> <span class="n">cp</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
     <span class="n">prob</span> <span class="o">=</span> <span class="n">cp</span><span class="o">.</span><span class="n">Problem</span><span class="p">(</span><span class="n">cp</span><span class="o">.</span><span class="n">Minimize</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">x</span><span class="p">),</span> <span class="p">[</span><span class="n">A</span> <span class="err">@</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">])</span>
-    <span class="k">return</span> <span class="n">prob</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="n">cp</span><span class="o">.</span><span class="n">GUROBI</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">prob</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="n">CVX_SOLVER</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 
 
 <span class="nd">@timeit</span>
 <span class="k">def</span> <span class="nf">picos_solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
     <span class="s2">&#34;&#34;&#34;Minimize c.T * x subject to Ax = b using PICOS.&#34;&#34;&#34;</span>
 
-    <span class="n">prob</span> <span class="o">=</span> <span class="n">pic</span><span class="o">.</span><span class="n">Problem</span><span class="p">()</span>
-    <span class="n">A</span> <span class="o">=</span> <span class="n">pic</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">pic</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="n">pic</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">pic</span><span class="o">.</span><span class="n">RealVariable</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">prob</span> <span class="o">=</span> <span class="n">picos</span><span class="o">.</span><span class="n">Problem</span><span class="p">()</span>
+    <span class="n">A</span> <span class="o">=</span> <span class="n">picos</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">picos</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">picos</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">picos</span><span class="o">.</span><span class="n">RealVariable</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
     <span class="n">prob</span><span class="o">.</span><span class="n">add_constraint</span><span class="p">(</span><span class="n">A</span> <span class="o">*</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">)</span>
     <span class="n">prob</span><span class="o">.</span><span class="n">set_objective</span><span class="p">(</span><span class="s1">&#39;min&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">.</span><span class="n">T</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
-    <span class="n">prob</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="s1">&#39;gurobi&#39;</span><span class="p">,</span> <span class="n">verbosity</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">prob</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="n">PICOS_SOLVER</span><span class="p">,</span> <span class="n">verbosity</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">prob</span>
 
 
 <span class="k">def</span> <span class="nf">gen_instance</span><span class="p">(</span><span class="n">nv</span><span class="p">,</span> <span class="n">nc</span><span class="p">):</span>
-    <span class="s2">&#34;&#34;&#34;Random nontrivial instance of nv variables and nc constraints.
-</span><span class="s2">    Ref.: https://www.cvxpy.org/examples/basic/linear_program.html&#34;&#34;&#34;</span>
+    <span class="s2">&#34;&#34;&#34;Random nontrivial LP instance with nv variables and nc constraints.
+</span><span class="s2">    Ref.: https://www.cvxpy.org/examples/basic/linear_program.html
+</span><span class="s2">    &#34;&#34;&#34;</span>
 
     <span class="n">sz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">nc</span><span class="p">)</span>
     <span class="n">lz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="o">-</span><span class="n">sz</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
@@ -449,49 +475,51 @@
     <span class="k">if</span> <span class="n">ax</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
         <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
-        <span class="n">ax</span><span class="o">.</span><span class="n">view_init</span><span class="p">(</span><span class="n">elev</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">azim</span><span class="o">=-</span><span class="mi">45</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">view_init</span><span class="p">(</span><span class="n">elev</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">azim</span><span class="o">=-</span><span class="mi">45</span><span class="p">)</span>
 
-        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&#34;Performance for LPs in PICOS and CVXPY using MOSEK&#34;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;Performance for LPs in PICOS and CVXPY using {SOLVER_NAME}&#34;</span><span class="p">)</span>
         <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&#34;Nof. variables&#34;</span><span class="p">)</span>
         <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&#34;Nof. constraints&#34;</span><span class="p">)</span>
         <span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s2">&#34;Time (s)&#34;</span><span class="p">)</span>
 
     <span class="n">nvars</span><span class="p">,</span> <span class="n">nconsts</span><span class="p">,</span> <span class="n">times</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">data</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">data</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>
-    <span class="n">surf</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot_trisurf</span><span class="p">(</span><span class="n">nvars</span><span class="p">,</span> <span class="n">nconsts</span><span class="p">,</span> <span class="n">times</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> 
-                           <span class="n">shade</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">antialiased</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">9</span><span class="p">)</span>
-    <span class="n">surf</span><span class="o">.</span><span class="n">_facecolors2d</span><span class="o">=</span><span class="n">surf</span><span class="o">.</span><span class="n">_facecolors3d</span>   <span class="c1"># Hacks for labels to work</span>
-    <span class="n">surf</span><span class="o">.</span><span class="n">_edgecolors2d</span><span class="o">=</span><span class="n">surf</span><span class="o">.</span><span class="n">_edgecolors3d</span>
+    <span class="n">surf</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot_trisurf</span><span class="p">(</span><span class="n">nvars</span><span class="p">,</span> <span class="n">nconsts</span><span class="p">,</span> <span class="n">times</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span>
+                           <span class="n">shade</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">antialiased</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">7</span><span class="p">)</span>
+    <span class="n">surf</span><span class="o">.</span><span class="n">_facecolors2d</span> <span class="o">=</span><span class="n">surf</span><span class="o">.</span><span class="n">_facecolor3d</span>   <span class="c1"># Hacks for labels to work</span>
+    <span class="n">surf</span><span class="o">.</span><span class="n">_edgecolors2d</span> <span class="o">=</span> <span class="n">surf</span><span class="o">.</span><span class="n">_edgecolor3d</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">ax</span>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">MIN_VARS</span><span class="p">,</span> <span class="n">MIN_CONSTS</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">50</span>
-    <span class="n">MAX_VARS</span><span class="p">,</span> <span class="n">MAX_CONSTS</span> <span class="o">=</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">8000</span>
-    <span class="n">STEP_VARS</span><span class="p">,</span> <span class="n">STEP_CONSTS</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">400</span>
-    <span class="n">N_PROBS</span> <span class="o">=</span> <span class="p">(</span><span class="n">MAX_VARS</span> <span class="o">-</span> <span class="n">MIN_VARS</span><span class="p">)</span> <span class="o">/</span> <span class="n">STEP_VARS</span> <span class="o">*</span> <span class="p">(</span><span class="n">MAX_CONSTS</span> <span class="o">-</span> <span class="n">MIN_CONSTS</span><span class="p">)</span> <span class="o">/</span> <span class="n">STEP_CONSTS</span>
 
-    <span class="n">picos</span><span class="p">,</span> <span class="n">cvx</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">nv</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">MIN_VARS</span><span class="p">,</span> <span class="n">MAX_VARS</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">STEP_VARS</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">nc</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">MIN_CONSTS</span><span class="p">,</span> <span class="n">MAX_CONSTS</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">STEP_CONSTS</span><span class="p">):</span>
+    <span class="n">VARS</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">MIN_VARS</span><span class="p">,</span> <span class="n">MAX_VARS</span><span class="p">,</span> <span class="n">STEPS_VARS</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">CONSTS</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">MIN_CONSTS</span><span class="p">,</span> <span class="n">MAX_CONSTS</span><span class="p">,</span> <span class="n">STEPS_CONSTS</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">N_PROBS</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">VARS</span><span class="p">)</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">CONSTS</span><span class="p">)</span>
+
+    <span class="n">pic</span><span class="p">,</span> <span class="n">cvx</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">nv</span> <span class="ow">in</span> <span class="n">VARS</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">nc</span> <span class="ow">in</span> <span class="n">CONSTS</span><span class="p">:</span>
             <span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">gen_instance</span><span class="p">(</span><span class="n">nv</span><span class="p">,</span> <span class="n">nc</span><span class="p">)</span>
 
-            <span class="n">picos_res</span><span class="p">,</span> <span class="n">tp</span> <span class="o">=</span> <span class="n">picos_solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-            <span class="n">picos</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">nv</span><span class="p">,</span> <span class="n">nc</span><span class="p">,</span> <span class="n">tp</span><span class="p">])</span>
+            <span class="n">pic_res</span><span class="p">,</span> <span class="n">tp</span> <span class="o">=</span> <span class="n">picos_solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+            <span class="n">pic</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">nv</span><span class="p">,</span> <span class="n">nc</span><span class="p">,</span> <span class="n">tp</span><span class="p">])</span>
 
             <span class="n">cvx_res</span><span class="p">,</span> <span class="n">tc</span> <span class="o">=</span> <span class="n">cvx_solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
             <span class="n">cvx</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">nv</span><span class="p">,</span> <span class="n">nc</span><span class="p">,</span> <span class="n">tc</span><span class="p">])</span>
 
             <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+
+            <span class="c1"># Just to check progress and validate:</span>
             <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;{100 * count / N_PROBS:.2f}</span><span class="si">% d</span><span class="s1">one. &#39;</span>
                   <span class="n">f</span><span class="s1">&#39;/ Last time: PICOS = {tp:.2f}s, CVXPY = {tc:.2f}s &#39;</span>
-                  <span class="n">f</span><span class="s1">&#39;/ PICOS_VAL = {picos_res.value:.2f}, CVX_VAL = {cvx_res:.2f}</span><span class="se">\r</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+                  <span class="n">f</span><span class="s1">&#39;/ PICOS_VAL = {pic_res.value:.2f}, CVX_VAL = {cvx_res:.2f}</span><span class="se">\r</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 
-        <span class="c1"># Save partial results overwriting last ones.</span>
-        <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;picos_performance.npy&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">picos</span><span class="p">))</span>
+        <span class="c1"># Save partial results (will overwrite!).</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;picos_performance.npy&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">pic</span><span class="p">))</span>
         <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;cvxpy_performance.npy&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">cvx</span><span class="p">))</span>
 
-    <span class="n">ax</span> <span class="o">=</span> <span class="n">plot_performance_surface</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">picos</span><span class="p">),</span> <span class="s2">&#34;PICOS&#34;</span><span class="p">)</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">plot_performance_surface</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">pic</span><span class="p">),</span> <span class="s2">&#34;PICOS&#34;</span><span class="p">)</span>
     <span class="n">plot_performance_surface</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">cvx</span><span class="p">),</span> <span class="s2">&#34;CVXPY&#34;</span><span class="p">,</span> <span class="n">ax</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;performance_surface.png&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table></div>
@@ -499,11 +527,15 @@
 </div><p>Before I show you the results, I must make some observations:</p>
 <ul>
 <li>I plot the combined time of modelling and solving. As the same solver was used in both instances, The performance being compared should be of the modelling APIs themselves.</li>
-<li>I do not know if the case would be different for other types of random LPs or even other types optimization problems. If you do, please let me know.</li>
-<li>These were computed with <strong>PICOS 2.0</strong> and <strong>CVXPY 1.1</strong> (around July 2020). They have both been thoroughly updated since then, and the results may be very different by now. I&rsquo;ll run it again for the newer versions sometime and update the post. If you do it before me, please also let me know.</li>
+<li>I do not know if the case would be different for other types of random LPs, and it surely would for other types optimization problems, like SDPs. If you know of some comparison for SDPs please let me know.</li>
+<li>These were computed with <strong>PICOS 2.0</strong> and <strong>CVXPY 1.1</strong> (around July 2020). Both modules are under very active development, and the results may be very different some time onwards. I&rsquo;ll run it again for the newer versions sometime and update the post.</li>
 </ul>
-<p><img src="/cvxpy_vs_picos_gurobi.png" alt="gurobi comparison"></p>
-<p>With these results in mind, I switched to PICOS since six months ago. Another reason for that was that it had some useful operations that CVXPY didn&rsquo;t have at the time (such as partial tracing). I thoroughly recommend both of them, but I will soon have another peek at the new tools in CVXPY to see how it is going.</p>
+<p><img src="/cvxpy_vs_picos_gurobi_old.png" alt="gurobi old comparison"></p>
+<p>With these results in mind, I switched to PICOS as of July 2020. Another reason for that was that it had some useful operations that CVXPY didn&rsquo;t have at the time (such as partial tracing). I thoroughly recommend both of them, but I will soon have another peek at the new tools in CVXPY to see how it is going.</p>
+<h2 id="-updated-comparison-for-new-versions"><a href="#-updated-comparison-for-new-versions" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:-updated-comparison-for-new-versions" class="headings">(!) Updated comparison for new versions</a></h2>
+<p>Looks like tables have turned in new versions! The following plot compares <strong>PICOS 2.1.2</strong> with <strong>CVXPY 1.1.10</strong>:</p>
+<p><img src="/cvxpy_vs_picos_gurobi_new.png" alt="gurobi new comparison"></p>
+<p>As I observe, CVXPY was around $1.6$ times faster than PICOS for large random LPs (and even faster for small ones). It still doesn&rsquo;t have partial tracing implemented though, which is very useful when dealing with SDPs in quantum information applications.</p>
 
             </div>
 
@@ -532,7 +564,7 @@
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2021-02-15 15:12:09 -03" style="cursor:help">
+        <span title="Updated @ 2021-02-15 23:15:19 -03" style="cursor:help">
 
 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2021-02-15</text><text x="915" y="140" textLength="650" transform="scale(.1)">2021-02-15</text></g></svg>
         </span></div>
