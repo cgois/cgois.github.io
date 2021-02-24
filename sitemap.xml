@@ -3,43 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cgois.github.io/posts/other_minds_review/</loc>
+    <lastmod>2021-02-23T23:12:38-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/tags/books/</loc>
+    <lastmod>2021-02-23T23:12:38-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/categories/books/</loc>
+    <lastmod>2021-02-23T23:12:38-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cgois.github.io/</loc>
-    <lastmod>2021-02-15T23:15:19-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cgois.github.io/posts/cvx_vs_picos/</loc>
-    <lastmod>2021-02-15T23:15:19-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cgois.github.io/tags/optimization/</loc>
-    <lastmod>2021-02-15T23:15:19-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cgois.github.io/tags/performance/</loc>
-    <lastmod>2021-02-15T23:15:19-03:00</lastmod>
+    <lastmod>2021-02-23T23:12:38-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://cgois.github.io/posts/</loc>
-    <lastmod>2021-02-15T23:15:19-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cgois.github.io/categories/programming/</loc>
-    <lastmod>2021-02-15T23:15:19-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cgois.github.io/tags/python/</loc>
-    <lastmod>2021-02-15T23:15:19-03:00</lastmod>
+    <lastmod>2021-02-23T23:12:38-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://cgois.github.io/tags/</loc>
-    <lastmod>2021-02-15T23:15:19-03:00</lastmod>
+    <lastmod>2021-02-23T23:12:38-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/posts/cvx_vs_picos/</loc>
+    <lastmod>2021-02-20T23:19:41-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/tags/optimization/</loc>
+    <lastmod>2021-02-20T23:19:41-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/tags/performance/</loc>
+    <lastmod>2021-02-20T23:19:41-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/categories/programming/</loc>
+    <lastmod>2021-02-20T23:19:41-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cgois.github.io/tags/python/</loc>
+    <lastmod>2021-02-20T23:19:41-03:00</lastmod>
   </url>
   
   <url>
@@ -84,7 +99,7 @@
   
   <url>
     <loc>https://cgois.github.io/about/</loc>
-    <lastmod>2021-02-15T23:08:58-03:00</lastmod>
+    <lastmod>2021-02-23T23:04:12-03:00</lastmod>
   </url>
   
 </urlset>

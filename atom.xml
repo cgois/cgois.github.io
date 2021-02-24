@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">cgois</title>
     <subtitle type="html"></subtitle>
-    <updated>2021-02-16T00:40:02-03:00</updated>
+    <updated>2021-02-23T23:13:06-03:00</updated>
     <id>https://cgois.github.io/</id>
     <link rel="alternate" type="text/html" href="https://cgois.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://cgois.github.io/atom.xml" />
@@ -17,10 +17,94 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.80.0">Hugo</generator>
         <entry>
+            <title type="text">Book recommendation: Other Minds by Peter Godfrey-Smith</title>
+            <link rel="alternate" type="text/html" href="https://cgois.github.io/posts/other_minds_review/" />
+            <id>https://cgois.github.io/posts/other_minds_review/</id>
+            <updated>2021-02-23T23:12:38-03:00</updated>
+            <published>2021-02-20T23:11:21-03:00</published>
+            <author>
+                    <name>Carlos de Gois</name>
+                    <uri>https://cgois.github.io/</uri>
+                    <email>carlosbgois@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">A short review on a layman science book about octopuses and philosophy of mind.</summary>
+            
+                <content type="html">&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://cgois.github.io/other_minds_book.jpg&#34; alt=&#34;other minds book cover&#34; style=&#34;zoom:80%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Nagel once popularized the question &amp;mdash; originally posed by Timothy Sprigge &amp;mdash; &lt;a href=&#34;https://www.jstor.org/stable/pdf/2183914.pdf?casa_token=CzT9LCrZIPsAAAAA:jr9TcVVl_KBVoWo9SOEY0sJbVTcbOiT32umC20YZ_SVRbH9Q0xFqi6Nd1ZK-srJ9w_PalcC6CVvl1T-mffiTYQiPx_ILYc_bCISXCPhNzPEKQUnblJe6&#34;&gt;&amp;ldquo;What is it like to be a bat?&amp;quot;&lt;/a&gt;, from which he concluded that &amp;ldquo;fundamentally an organism has conscious mental states if and only if there is something that it is like to &lt;em&gt;be&lt;/em&gt; that organism &amp;mdash; something it is like &lt;em&gt;for&lt;/em&gt; the organism&amp;rdquo;. In &lt;a href=&#34;https://en.wikipedia.org/wiki/Other_Minds:_The_Octopus,_the_Sea,_and_the_Deep_Origins_of_Consciousness&#34;&gt;Other Minds: The Octopus, the Sea, and the Deep Origins of Consciousness&lt;/a&gt;, Peter Godfrey-Smith put me uncannily close to feeling octopuses do know what it is like to be themselves.&lt;/p&gt;
+&lt;p&gt;A philosopher of mind who disagrees with the notion that consciousness suddenly emerged from unthinking matter, Godfrey-Smith extends Nagel&amp;rsquo;s definition by considering an evolutionary perspective in which consciousness gradually emerged. But &amp;ldquo;how can the fact of life feeling like something slowly creep  into being? How can an animal be halfway to having it feel like something to be that animal?&amp;rdquo; These are some questions he sets out to answer in an unexpected way: by observing octopuses.&lt;/p&gt;
+&lt;p&gt;The book starts out by describing life in the &lt;a href=&#34;https://www.britannica.com/science/Ediacaran-Period&#34;&gt;Ediacaran Period&lt;/a&gt; (~600 million years ago), of which there are the oldest evidence of bilaterians. These highly symmetrical forms of life further branched into several lineages with &amp;ldquo;complex active bodies&amp;rdquo; &amp;mdash; a supposedly necessary condition for consciousness &amp;mdash; during the Cambrian. On one of these ramifications are us, and on another are octopuses, squids, cuttlefish and further cephalopods. All of this is to say that we are &lt;em&gt;very&lt;/em&gt; different from octopuses &amp;mdash; which is arguably a not so surprising fact.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://cgois.github.io/peter_vs_octopus.jpg&#34;
+         alt=&#34;Peter Godfrey-Smith is very different from an octopus.&#34; width=&#34;700px&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;&lt;em&gt;Peter Godfrey-Smith is very different from an octopus.&lt;/em&gt;&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;br&gt;
+While this may sound quite boring, I can guarantee you it isn&#39;t. But it is nowhere close to be as interesting as what comes next. Apart from a philosopher, Godfrey-Smith is also a scuba diver who for many years dived in the coast of Australia, especially somewhere he calls &#34;Octopolis&#34;. During the next one or two-hundred pages, he intersperses discussions on philosophy of mind with accounts of his many encounters with these animals, of which he says 
+&lt;blockquote&gt;
+&lt;p&gt;Cephalopods are an island of mental complexity in the sea of invertebrate animals.  Because our  most recent common ancestor was so simple and lies so far back, cephalopods are an independent experiment in the evolution of large brains and complex behavior. If we can make contact with cephalopods as sentient  beings,  it is not because of a shared history, not because of kinship, but because evolution built minds twice over. This is probably the closest we will come to meeting an intelligent alien.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Among endless fascinating aspects of octopuses are the facts that &amp;mdash; being an invertebrate &amp;mdash;, it can squeeze through holes as small as their eyes, and their nervous system is highly descentralized: 2/3 of its neurons are spread between its arms, which are considerably independent, although they can also be controlled in a coordinated manner. Plus they can learn to turn lights off&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Octopuses in at least two aquariums have learned to turn off the lights by squirting jets of water at the bulbs when no one is watching, and short-circuiting the power supply. At the University of Otago in New Zealand, this became so expensive that the octopus had to be released back to the wild.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;and they very clearly dislike &lt;em&gt;some&lt;/em&gt; people, which means they can recognize us:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In the same lab in New Zealand that had the “lights-out” problem, an  octopus took a dislike to one member of the staff, for no obvious  reason. Whenever that person passed by on the walkway behind the tank,  she received a half-gallon jet of water down the back of her neck.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Godfrey-Smith&amp;rsquo;s many fascinating observations then serve as real-life examples to justify his claims that cephalopods, while immensely foreign and living in environment immensely different from ours, present uncannily rich behavior (of which you can &lt;a href=&#34;https://www.scientificamerican.com/article/the-mind-of-an-octopus/&#34;&gt;read here&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/My_Octopus_Teacher&#34;&gt;watch here&lt;/a&gt;). As Daniel Dennett says in &lt;a href=&#34;https://ase.tufts.edu/cogstud/dennett/papers/review_of_PGS.pdf&#34;&gt;his review of the book&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;That is part of what makes the decentralized, distributed computational architecture of the  cephalopods so fascinating: it turns out that there is more than one way of designing a nervous  system that can think ahead effectively.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While some readers may be bogged down by the more philosophical sections, this is all in all a very dynamic and interesting reading. Plus, it runs at only ~200 pages, so you won&amp;rsquo;t get too angry if it ends up not being that much appealing to you as it was to me.&lt;/p&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="https://cgois.github.io/posts/" term="posts" label="posts" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://cgois.github.io/categories/books/" term="books" label="books" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://cgois.github.io/tags/books/" term="books" label="books" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">CVXPY vs. PICOS: performance comparison for linear programs</title>
             <link rel="alternate" type="text/html" href="https://cgois.github.io/posts/cvx_vs_picos/" />
             <id>https://cgois.github.io/posts/cvx_vs_picos/</id>
-            <updated>2021-02-15T23:15:19-03:00</updated>
+            <updated>2021-02-20T23:19:41-03:00</updated>
             <published>2021-01-10T13:54:40-03:00</published>
             <author>
                     <name>Carlos de Gois</name>
