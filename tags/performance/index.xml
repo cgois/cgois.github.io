@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>performance on cgois</title>
+    <link>https://cgois.github.io/tags/performance/</link>
+    <description>Recent content in performance on cgois</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 10 Jan 2021 13:54:40 -0300</lastBuildDate><atom:link href="https://cgois.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CVXPY vs. PICOS: performance comparison for linear programs</title>
+      <link>https://cgois.github.io/posts/cvx_vs_picos/</link>
+      <pubDate>Sun, 10 Jan 2021 13:54:40 -0300</pubDate>
+      
+      <guid>https://cgois.github.io/posts/cvx_vs_picos/</guid>
+      <description>CVXPY and PICOS are two frequently used optimization program modelling tools for Python. I compare their performance in modelling simple random linear programs.</description>
+    </item>
+    
+    <item>
+      <title>Parallelizing simple loops in Python</title>
+      <link>https://cgois.github.io/posts/processpool/</link>
+      <pubDate>Sat, 26 Sep 2020 13:54:40 -0300</pubDate>
+      
+      <guid>https://cgois.github.io/posts/processpool/</guid>
+      <description>Parallelizing loops with no iteration interdependence using Pythons&amp;rsquo; concurrent.futures module.</description>
+    </item>
+    
+  </channel>
+</rss>

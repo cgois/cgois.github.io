@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on cgois</title>
+    <link>https://cgois.github.io/tags/</link>
+    <description>Recent content in Tags on cgois</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 08 Aug 2022 16:01:30 +0200</lastBuildDate><atom:link href="https://cgois.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bell inequalities</title>
+      <link>https://cgois.github.io/tags/bell-inequalities/</link>
+      <pubDate>Mon, 08 Aug 2022 16:01:30 +0200</pubDate>
+      
+      <guid>https://cgois.github.io/tags/bell-inequalities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>entanglement</title>
+      <link>https://cgois.github.io/tags/entanglement/</link>
+      <pubDate>Mon, 08 Aug 2022 16:01:30 +0200</pubDate>
+      
+      <guid>https://cgois.github.io/tags/entanglement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>joint measurability</title>
+      <link>https://cgois.github.io/tags/joint-measurability/</link>
+      <pubDate>Mon, 08 Aug 2022 16:01:30 +0200</pubDate>
+      
+      <guid>https://cgois.github.io/tags/joint-measurability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>optimization</title>
+      <link>https://cgois.github.io/tags/optimization/</link>
+      <pubDate>Mon, 08 Aug 2022 16:01:30 +0200</pubDate>
+      
+      <guid>https://cgois.github.io/tags/optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>books</title>
+      <link>https://cgois.github.io/tags/books/</link>
+      <pubDate>Sat, 20 Feb 2021 23:11:21 -0300</pubDate>
+      
+      <guid>https://cgois.github.io/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>performance</title>
+      <link>https://cgois.github.io/tags/performance/</link>
+      <pubDate>Sun, 10 Jan 2021 13:54:40 -0300</pubDate>
+      
+      <guid>https://cgois.github.io/tags/performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://cgois.github.io/tags/python/</link>
+      <pubDate>Sun, 10 Jan 2021 13:54:40 -0300</pubDate>
+      
+      <guid>https://cgois.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>inequalities</title>
+      <link>https://cgois.github.io/tags/inequalities/</link>
+      <pubDate>Sun, 04 Oct 2020 02:46:32 -0300</pubDate>
+      
+      <guid>https://cgois.github.io/tags/inequalities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>polytopes</title>
+      <link>https://cgois.github.io/tags/polytopes/</link>
+      <pubDate>Sun, 04 Oct 2020 02:46:32 -0300</pubDate>
+      
+      <guid>https://cgois.github.io/tags/polytopes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vertex enumeration</title>
+      <link>https://cgois.github.io/tags/vertex-enumeration/</link>
+      <pubDate>Sun, 04 Oct 2020 02:46:32 -0300</pubDate>
+      
+      <guid>https://cgois.github.io/tags/vertex-enumeration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>parallelization</title>
+      <link>https://cgois.github.io/tags/parallelization/</link>
+      <pubDate>Sat, 26 Sep 2020 13:54:40 -0300</pubDate>
+      
+      <guid>https://cgois.github.io/tags/parallelization/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

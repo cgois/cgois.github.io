@@ -1,1 +1,3 @@
 User-agent: *
+Disallow:
+Sitemap: https://cgois.github.io/sitemap.xml

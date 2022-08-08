@@ -2,64 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cgois.github.io/posts/other_minds_review/</loc>
-    <lastmod>2021-02-24T13:58:44+01:00</lastmod>
-  </url><url>
-    <loc>https://cgois.github.io/tags/books/</loc>
-    <lastmod>2021-02-24T13:58:44+01:00</lastmod>
-  </url><url>
-    <loc>https://cgois.github.io/categories/books/</loc>
-    <lastmod>2021-02-24T13:58:44+01:00</lastmod>
+    <loc>https://cgois.github.io/tags/bell-inequalities/</loc>
+    <lastmod>2022-08-08T16:01:30+02:00</lastmod>
   </url><url>
     <loc>https://cgois.github.io/</loc>
-    <lastmod>2022-06-24T17:44:44+02:00</lastmod>
+    <lastmod>2022-08-08T16:01:30+02:00</lastmod>
   </url><url>
-    <loc>https://cgois.github.io/posts/</loc>
-    <lastmod>2022-06-24T17:35:27+02:00</lastmod>
+    <loc>https://cgois.github.io/tags/entanglement/</loc>
+    <lastmod>2022-08-08T16:01:30+02:00</lastmod>
   </url><url>
-    <loc>https://cgois.github.io/tags/</loc>
-    <lastmod>2022-06-24T17:35:27+02:00</lastmod>
-  </url><url>
-    <loc>https://cgois.github.io/posts/cvx_vs_picos/</loc>
-    <lastmod>2022-06-24T17:35:27+02:00</lastmod>
+    <loc>https://cgois.github.io/tags/joint-measurability/</loc>
+    <lastmod>2022-08-08T16:01:30+02:00</lastmod>
   </url><url>
     <loc>https://cgois.github.io/tags/optimization/</loc>
-    <lastmod>2022-06-24T17:35:27+02:00</lastmod>
+    <lastmod>2022-08-08T16:01:30+02:00</lastmod>
   </url><url>
-    <loc>https://cgois.github.io/tags/performance/</loc>
-    <lastmod>2022-06-24T17:35:27+02:00</lastmod>
+    <loc>https://cgois.github.io/posts/</loc>
+    <lastmod>2022-08-08T16:01:30+02:00</lastmod>
   </url><url>
     <loc>https://cgois.github.io/categories/programming/</loc>
-    <lastmod>2022-06-24T17:35:27+02:00</lastmod>
+    <lastmod>2022-08-08T16:01:30+02:00</lastmod>
+  </url><url>
+    <loc>https://cgois.github.io/categories/quantum-information/</loc>
+    <lastmod>2022-08-08T16:01:30+02:00</lastmod>
+  </url><url>
+    <loc>https://cgois.github.io/posts/sdps_in_quantum_info/</loc>
+    <lastmod>2022-08-08T16:01:30+02:00</lastmod>
+  </url><url>
+    <loc>https://cgois.github.io/tags/</loc>
+    <lastmod>2022-08-08T16:01:30+02:00</lastmod>
+  </url><url>
+    <loc>https://cgois.github.io/posts/other_minds_review/</loc>
+    <lastmod>2021-02-20T23:11:21-03:00</lastmod>
+  </url><url>
+    <loc>https://cgois.github.io/tags/books/</loc>
+    <lastmod>2021-02-20T23:11:21-03:00</lastmod>
+  </url><url>
+    <loc>https://cgois.github.io/categories/books/</loc>
+    <lastmod>2021-02-20T23:11:21-03:00</lastmod>
+  </url><url>
+    <loc>https://cgois.github.io/posts/cvx_vs_picos/</loc>
+    <lastmod>2021-01-10T13:54:40-03:00</lastmod>
+  </url><url>
+    <loc>https://cgois.github.io/tags/performance/</loc>
+    <lastmod>2021-01-10T13:54:40-03:00</lastmod>
   </url><url>
     <loc>https://cgois.github.io/tags/python/</loc>
-    <lastmod>2022-06-24T17:35:27+02:00</lastmod>
-  </url><url>
-    <loc>https://cgois.github.io/posts/panda2lrs/</loc>
-    <lastmod>2020-10-13T14:22:14+02:00</lastmod>
+    <lastmod>2021-01-10T13:54:40-03:00</lastmod>
   </url><url>
     <loc>https://cgois.github.io/tags/inequalities/</loc>
-    <lastmod>2020-10-13T14:22:14+02:00</lastmod>
+    <lastmod>2020-10-04T02:46:32-03:00</lastmod>
+  </url><url>
+    <loc>https://cgois.github.io/posts/panda2lrs/</loc>
+    <lastmod>2020-10-04T02:46:32-03:00</lastmod>
   </url><url>
     <loc>https://cgois.github.io/tags/polytopes/</loc>
-    <lastmod>2020-10-13T14:22:14+02:00</lastmod>
+    <lastmod>2020-10-04T02:46:32-03:00</lastmod>
   </url><url>
     <loc>https://cgois.github.io/categories/tools/</loc>
-    <lastmod>2020-10-13T14:22:14+02:00</lastmod>
+    <lastmod>2020-10-04T02:46:32-03:00</lastmod>
   </url><url>
     <loc>https://cgois.github.io/tags/vertex-enumeration/</loc>
-    <lastmod>2020-10-13T14:22:14+02:00</lastmod>
+    <lastmod>2020-10-04T02:46:32-03:00</lastmod>
   </url><url>
     <loc>https://cgois.github.io/tags/parallelization/</loc>
-    <lastmod>2021-02-15T10:15:02+01:00</lastmod>
+    <lastmod>2020-09-26T13:54:40-03:00</lastmod>
   </url><url>
     <loc>https://cgois.github.io/posts/processpool/</loc>
-    <lastmod>2021-02-15T10:15:02+01:00</lastmod>
+    <lastmod>2020-09-26T13:54:40-03:00</lastmod>
   </url><url>
     <loc>https://cgois.github.io/categories/</loc>
-    <lastmod>2020-09-25T21:21:00+02:00</lastmod>
+    <lastmod>2020-09-25T23:19:35-03:00</lastmod>
   </url><url>
     <loc>https://cgois.github.io/about/</loc>
-    <lastmod>2022-06-24T17:44:44+02:00</lastmod>
   </url>
 </urlset>

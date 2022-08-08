@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>quantum information on cgois</title>
+    <link>https://cgois.github.io/categories/quantum-information/</link>
+    <description>Recent content in quantum information on cgois</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 08 Aug 2022 16:01:30 +0200</lastBuildDate><atom:link href="https://cgois.github.io/categories/quantum-information/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Semidefinite programming in quantum information</title>
+      <link>https://cgois.github.io/posts/sdps_in_quantum_info/</link>
+      <pubDate>Mon, 08 Aug 2022 16:01:30 +0200</pubDate>
+      
+      <guid>https://cgois.github.io/posts/sdps_in_quantum_info/</guid>
+      <description>A tutorial with a bunch of examples of using SDP in quantum information problems (entanglement, joint measurability, violation of Bell inequalities&amp;hellip;), written in Python, Julia and Mathematica.</description>
+    </item>
+    
+  </channel>
+</rss>

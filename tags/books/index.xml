@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>books on cgois</title>
+    <link>https://cgois.github.io/tags/books/</link>
+    <description>Recent content in books on cgois</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 20 Feb 2021 23:11:21 -0300</lastBuildDate><atom:link href="https://cgois.github.io/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&#34;Other Minds&#34; by Peter Godfrey-Smith</title>
+      <link>https://cgois.github.io/posts/other_minds_review/</link>
+      <pubDate>Sat, 20 Feb 2021 23:11:21 -0300</pubDate>
+      
+      <guid>https://cgois.github.io/posts/other_minds_review/</guid>
+      <description>A short review on a layman science book about octopuses and philosophy of mind.</description>
+    </item>
+    
+  </channel>
+</rss>
