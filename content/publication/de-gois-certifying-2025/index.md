@@ -1,0 +1,37 @@
+---
+title: Certifying quantum states and their properties through correlations, communication
+  and tomography
+authors:
+- Carlos de Gois
+date: '2025-01-01'
+publishDate: '2025-10-29T13:49:06.020537Z'
+publication_types:
+- thesis
+abstract: 'Quantum systems offer significant advantages in information processing
+  and communication, but leveraging these benefits requires reliable methods for extracting
+  relevant information. Due to the probabilistic nature of quantum mechanics, the
+  no-cloning theorem, and the existence of incompatible observables, measuring quantum
+  states is an inherently indirect and often costly process. As engineered quantum
+  systems scale beyond the laboratory, the ability to efficiently certify quantum
+  states and their properties becomes indispensable. This thesis examines quantum
+  state certification from three perspectives: correlations, communication, and tomography.
+  Correlations play a key role in security protocols, while communication scenarios
+  highlight potential applications of quantum systems in information transmission.
+  Beyond practical applications, they can also reveal fundamental capabilities and
+  limitations of quantum information. Tomography, on the other hand, provides techniques
+  for reconstructing unknown quantum states and is essential not only for validating
+  quantum devices, but also for extracting results from simulations and computations.
+  Our main contributions include: • Establishing a connection between sum-of-squares
+  uncertainty relations and graph-theoretic quantities. • Constructing a complete
+  set of criteria for certifying entanglement dimension with an untrusted adversary.
+  • Proving an equivalence between classical and quantum communication with entangled
+  parties. • Identifying a class of communication games for which having an entanglement
+  dimension larger than the communication dimension can be useful. • Providing rigorous
+  statistical guarantees for quantum state tomography experiments applicable to any
+  experimental setup. • Connecting the optimal measurement choices for partial state
+  tomography to graph covering problems. • Proposing a protocol for characterizing
+  one- and two-body observables in native fermionic simulators.'
+links:
+- name: URL
+  url: https://dspace.ub.uni-siegen.de/handle/ubsi/6956
+---
