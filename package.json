@@ -11,7 +11,13 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.12",
     "@tailwindcss/typography": "^0.5.10",
-    "preact": "^10.27.2",
-    "tailwindcss": "^4.1.12"
+    "preact": "^10.27.2"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^4.1.16"
   }
 }

@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Alex Johnson
+title: Carlos de Gois
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
+first_name: Carlos 
+last_name: de Gois 
 
 # Pronouns (optional)
 pronouns: he/him
 
 # Status emoji
 status:
-  icon: 🚀
+  icon:
 
 # Is this the primary user of the site?
 superuser: true
@@ -23,83 +23,76 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: Postdoc
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: Inria Saclay
+    url: https://www.inria.fr/fr/centre-inria-de-saclay
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'mailto:carlos.belini-de-gois@inria.fr'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
+  # - icon: brands/x
+  #   url: https://twitter.com/AlexAIResearch
   - icon: brands/github
-    url: https://github.com/alexjohnsonai
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
+    url: https://github.com/cgois
+  # - icon: brands/linkedin
+  #   url: https://www.linkedin.com/in/alexjohnsonai/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
+    url: https://scholar.google.com/citations?user=gAc5ldUAAAAJ
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/0000-0001-9377-4168
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Quantum Information
+  - Steering
+  - Prepare-and-measure
+  - Nonlocality
+  - Quantum State Tomography
+  - Semidefinite Programming
+  - Noncommutative Polynomial Optimisation
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
+  - area: Ph.D. in Physics
+    institution: Universität Siegen
     icon: ""
-    date_start: 2015-09-01
-    date_end: 2019-06-30
+    # date_start: 2015-09-01
+    date_end: 2025-06-01
     summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
+      Thesis on _Certifying quantum states and their properties_. Supervised by Otfried Gühne, awarded _summa cum laude_.
     button:
       text: 'Read Thesis'
-      url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
+      url: 'https://doi.org/10.25819/ubsi/10714'
+  - area: M.Sc. in Physics
+    institution: Universidade de Campinas
     icon: ""
-    date_start: 2013-09-01
-    date_end: 2015-05-31
+    # date_start: 2013-09-01
+    date_end: 2021-08-01
     summary: |
-      GPA: 4.0/4.0
-
-      Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
+      Thesis on _Classicality and dense coding in the prepare and measure scenario_, supervised by Rafael Rabelo.
+    button:
+      text: 'Read Thesis'
+      url: 'https://hdl.handle.net/20.500.12733/1252'
+  - area: B.Sc. in Physics
+    institution: Universidade de Campinas
     icon: ""
-    date_start: 2009-09-01
-    date_end: 2013-05-31
-    summary: |
-      GPA: 3.9/4.0
-
-      Minored in Mathematics. President of AI Club.
-
+    # date_start: 2009-09-01
+    date_end: 2019-07-01
+    # summary: |
+      # Thesis on
 work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
+  - position: Postdoc
+    company_name: Inria Saclay
     company_url: 'https://ai.meta.com/'
     icon: ''
-    date_start: 2020-01-01
+    date_start: 2025-06-01
     date_end: ''
     summary: |2-
       Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
-    icon: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -136,10 +129,10 @@ skills:
         icon: book-open
 
 languages:
+  - name: Portuguese
+    percent: 100
   - name: English
     percent: 100
-  - name: Spanish
-    percent: 50
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -169,4 +162,10 @@ awards:
       Recognized for contributions to scaling laws in deep learning.
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+<!-- **About me** -->
+
+I am a postdoctoral researcher at Inria, working in the [PhIQus group](https://team.inria.fr/phiqus/) with Marc-Olivier Renou. I completed my Ph.D. in the [TQO group](https://www.physik.uni-siegen.de/tqo/) at Universität Siegen under the supervision of Otfried Gühne, and my M.Sc. and B.Sc. in Physics at Universidade de Campinas, where I was part of the [MathFoundQ](https://www.ime.unicamp.br/~mfq/) group with Rafael Rabelo.
+
+My research focuses on the interface between quantum information theory and optimisation. I am interested in various aspects of quantum correlations (entanglement, steering, nonlocality, prepare-and-measure), statistical analysis of quantum state tomography, and in optimisation methods with applications to quantum information (semidefinite programming, noncommutative polynomial optimization). Part of my work involves numerical methods, including contributions to the [Ket.jl](https://github.com/dev-ket/Ket.jl) library.
+
+Outside of research, I like computers, literature, linguistics, popular music, bouldering, hiking and cycling. 
